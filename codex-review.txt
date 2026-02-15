@@ -1,0 +1,96 @@
+Phase 1 — Global Audit (Tech + Content + Positioning)
+
+Strengths
+
+Clear service coverage aligned with the PDF: Benchmarking QoS/QoE, Ingénierie télécom, Installations, Solutions IT/Cyber, Conseil & Formation.
+Visual system is consistent and technically credible (telecom‑oriented aesthetics, structured sections).
+Multiple proof mechanisms already exist (case studies, partner logos, leadership section, service pages).
+Bilingual and institutional positioning signals are present (regulators, operators, B2B focus).
+Weaknesses
+
+Editorial tone feels “robotic”: repeated slogans, heavy superlatives, limited concrete context (how, for whom, with what outcomes).
+Value proposition appears broad and technical without prioritization per audience (manager vs engineer vs regulator).
+The narrative lacks explicit linkage to business outcomes and regulatory constraints from the PDF (SLA/QoS compliance, decision frameworks).
+Some sections are visually dense; content hierarchy can blur key messages for decision‑makers.
+Neutral Points
+
+The multi‑page architecture is adequate but could be refined for clearer persona‑driven navigation.
+Brand is consistent, yet more “human credibility” can be added without changing the structure.
+Perceived Risks (Corporate Client Perspective)
+
+Risk of “generalist” perception if proof points and deliverables are not explicit.
+Risk of over‑technical framing without governance/decision language for regulators and executive stakeholders.
+Risk of trust dilution if methodology and process (benchmarking rigor, auditability) are not clearly framed.
+Phase 2 — Implicit Benchmarking (No Company Names)
+
+Current perceived positioning
+
+Strong integrator/engineering firm with advanced technical capabilities, but not yet fully perceived as a strategic telecom partner.
+Desired perceived positioning
+
+Strategic telecom partner with institutional credibility, clear delivery methodology, and measurable outcomes for regulators and operators.
+Phase 3 — Recommended Web Architecture (Compatible with Existing Structure)
+
+Suggested structure (compatible, non‑radical)
+
+Home
+Services
+Solutions IT & Cyber
+Case Studies
+Insights / Blog
+About (Leadership, Organisation, Mission/Vision)
+Contact
+Persona‑based navigation paths
+
+Managers: Home → Case Studies → Services → Contact
+Engineers: Services → Technical Methodologies → Case Studies → Contact
+Institutions/Regulators: Home → Benchmarking QoS → Case Studies → About
+Service grouping approach
+
+Regroup into 3 blocks without changing pages:
+Benchmarking & QoS
+Engineering & Installations
+IT, Cyber & Support
+Phase 4 — Content Strategy (Anti‑Robotic Approach, en français)
+
+Pourquoi le site paraît “robotique”
+
+Formulations générales, peu de contexte métier.
+Manque de preuves situées (régulateur, opérateur, objectifs).
+Peu d’explication pédagogique des résultats pour les non‑techniques.
+Recommandations éditoriales (en français)
+
+Introduire des “repères décisionnels” pour managers et institutions.
+Transformer les slogans en phrases d’expérience terrain.
+Donner des exemples concrets de livrables : rapports QoS, dashboards, KPI réglementaires.
+Exemples de reformulation (en français)
+
+“Notre expertise QoS” →
+“Nous produisons des rapports QoS certifiables par régulateur, avec segmentation par zone et par technologie.”
+“Accompagnement 360°” →
+“Du design radio au plan CAPEX, nous priorisons les actions qui améliorent la conformité et l’expérience client.”
+“Solutions IT sécurisées” →
+“SOC 24/7, PRA/PCA, gouvernance et SLA : nos solutions IT sont alignées sur les exigences des opérateurs.”
+Phase 5 — Layout & Visual Direction (Images from /assets/images/previews)
+
+Layout logic
+
+Home: hero + preuve immédiate (missions terrain) + services prioritaires + cas clients + CTA institutionnel.
+Insights/Blog: narrative visuelle avec visuels techniques, pas de marketing agressif.
+Services: visuels techniques par domaine pour crédibilité.
+Recommended image placement
+
+Benchmarking/QoS: africa-benchmarking-telecoms.jpg
+Ingénierie/Infrastructure: infrastructure-telecom-gwit.jpg, telecom-infrastructure.jpg
+Réseaux & pylônes: pylones-ciel-cyan.jpg, deux-pylones-ciel-cyan.jpg
+Fibre & transmission: fibre-optique-2.jpg
+IT/SOC: solutions-informatiques.jpg, tech-worker.jpg
+Formation/Conseil: formation-gwit.jpg
+Visual storytelling
+
+Ingénieurs: visuels techniques + métriques
+Managers: visuels de projets + résultats chiffrés
+Institutions: visuels neutres, structurés, réglementaires
+Phase 6 — Client‑Ready Synthesis
+
+The site already demonstrates strong telecom engineering depth and solid service coverage. The main gap is narrative: the content feels too generic and lacks “decision‑grade” framing for managers and regulators. With targeted editorial adjustments, a clearer persona‑based navigation, and stronger contextual proof points (deliverables, KPI, SLA), GWIT can be positioned as a strategic telecom partner rather than a pure integrator. The current structure is sufficient; the next step is to humanize the messaging, highlight operational rigor, and reinforce institutional credibility across services and case studies.

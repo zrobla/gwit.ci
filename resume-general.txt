@@ -1,0 +1,96 @@
+Phase 1 — Audit Global (Tech + Contenu + Positionnement)
+Forces
+
+Architecture claire avec pages clés (accueil, services, pages de service, blog, contact) et parcours global cohérent.
+Portefeuille d’offres aligné avec le PDF : benchmarking QoS, ingénierie télécom, installation/déploiement, solutions IT/cyber, support & formations.
+Mise en scène “preuves & résultats” via chiffres clés, cas de succès et CTA orientés action.
+Ton global institutionnel, sérieux, avec vocabulaire métier crédible pour un public télécom.
+Faiblesses
+
+Densité élevée sur la page d’accueil, hiérarchie visuelle parfois chargée : beaucoup de blocs successifs qui diluent le message principal.
+Contenu parfois “robotique” : listes techniques longues sans mise en contexte opérationnel ou impact métier.
+Peu d’ancrage “terrain local” (régulateurs, types d’acteurs, zones d’intervention) alors que le PDF met l’accent sur l’Afrique et la Côte d’Ivoire.
+Cohérence éditoriale inégale (CTA parfois génériques, formulations marketing mixtes FR/EN).
+Points neutres
+
+Style premium déjà présent, mais pas encore entièrement “consulting-grade”.
+Blog/insights encore peu intégré à l’autorité technique globale.
+Risques perçus côté client corporate
+
+Manque de preuves institutionnelles (certifications, références publiques, gouvernance de mission).
+Sur‑promesse implicite si les méthodes et livrables ne sont pas systématiquement visibles au bon endroit.
+Difficulté pour un décideur non technique à identifier rapidement “ce qu’il gagne, comment, et sous quels KPI”.
+Phase 2 — Benchmark implicite (sans nommer de concurrents)
+Positionnement perçu actuel
+
+“Ingénierie & intégration télécom avancée” avec un vernis consulting.
+Forte compétence technique, moins de posture “partenaire stratégique”.
+Positionnement souhaité
+
+“Partenaire stratégique télécom & IT” capable de cadrer, mesurer, livrer, sécuriser et accompagner la transformation.
+Autorité institutionnelle claire (régulateurs, opérateurs, entreprises), sans agressivité commerciale.
+Phase 3 — Architecture Web Recommandée (compatible structure actuelle)
+Structure proposée
+
+Accueil : vision + promesse concrète + preuves + services majeurs + cas de succès + CTA.
+Services (hub) : 5 offres + livrables/KPI + renvoi vers pages détaillées.
+Pages services : méthode, livrables, cas d’usage, CTA ciblés.
+Cas de succès (section ou page dédiée) : filtres par service, format résumé + détail à la demande.
+À propos / Leadership : légitimité, gouvernance, expertise, responsabilité.
+Blog & Insights : contenus courts, cadrés pour décideurs.
+Contact : formulaire structuré + expectation management.
+Parcours recommandés
+
+Managers : Accueil → Résultats mesurables → Cas de succès → Services → Contact.
+Ingénieurs : Services → Méthodologie → Livrables → Cas d’usage techniques.
+Institutions : Benchmarking QoS → Gouvernance de mesure → Preuves de conformité.
+Phase 4 — Stratégie de Contenu (anti‑robotique, en FR)
+Pourquoi le contenu paraît “robotique”
+
+Trop de blocs descriptifs linéaires, peu de storytelling métier.
+Peu d’exemples concrets de terrain (contextes, contraintes, décision).
+Langage trop “offre produit”, pas assez “situation client”.
+Recommandations éditoriales
+
+Ajouter des formulations “situation → intervention → résultat”.
+Réduire les superlatifs, augmenter les “preuves” (KPIs, livrables, méthodes).
+Mettre en avant l’approche terrain Afrique : zones, contraintes, régulateurs.
+Exemples de framing (FR uniquement)
+
+“Nous intervenons quand la QoS devient un enjeu réglementaire ou concurrentiel. Notre méthode combine drive‑tests, scoring multi‑couches et restitution exploitable par les autorités.”
+“Ce que vous recevez : une lecture opérationnelle de la performance réseau, des recommandations actionnables et des KPI prêts à piloter la décision.”
+“Notre engagement : objectiver la qualité, sécuriser la conformité, accélérer l’optimisation.”
+Phase 5 — Direction Layout & Visuelle (avec assets existants)
+Logique visuelle
+
+Héros : image large en arrière‑plan + texte synthétique + 3 preuves clés.
+Services : cartes premium avec image plein cadre + livrables.
+Cas d’usage : résumé à gauche, image à droite, détails en accordéon.
+Placement recommandé des images
+
+Héros : infrastructures-telecoms-cyan.jpg
+Benchmarking QoS : africa-benchmarking-telecoms.jpg
+Ingénierie télécom : telecoms-ingenierie.jpg
+Déploiement/Installation : deux-pylones-ciel-cyan.jpg
+IT & Cyber : solutions-informatiques.jpg
+Support & Formations : formation-gwit.jpg
+Leadership/Expertise : tech-worker.jpg
+Phase 6 — Synthèse Client‑Ready
+
+Le site est crédible techniquement et aligné avec l’offre télécom/IT décrite dans le dossier GWIT.
+Le point principal à corriger est la “rigidité éditoriale” : il faut transformer la description technique en preuves concrètes et contextualisées.
+La structure actuelle est exploitable : il suffit de renforcer l’architecture narrative et la hiérarchisation des preuves.
+Une direction visuelle plus structurée et moins dense renforcera la perception “partenaire stratégique” recherchée.
+Les actifs visuels déjà disponibles suffisent pour un rendu corporate premium, sans refonte radicale.
+Si tu veux, je peux traduire ces recommandations en changements concrets page par page avec priorisation (impact vs effort).
+
+
+
+
+Parfait. Je te propose une feuille de route page par page, priorisée (impact vs effort), puis j’applique les changements si tu veux.
+
+Avant de commencer, dis-moi juste :
+
+Quelles pages sont prioritaires à traiter en premier ?
+Tu veux uniquement un plan détaillé ou aussi l’exécution des modifications dans les fichiers ?
+Si tu me laisses décider, je commence par index.html, nos-services.html, puis les pages *.html, ensuite notre-blog.html et contact.html.

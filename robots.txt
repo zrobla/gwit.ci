@@ -1,0 +1,10 @@
+# Robots.txt pour GWIT
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.gwit.ci/sitemap.xml
+
+# Bloquer fichiers sensibles (optionnel)
+Disallow: /assets/vendor/
+Disallow: /*.pdf$

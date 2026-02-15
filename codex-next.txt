@@ -1,0 +1,22 @@
+Here’s a pragmatic next‑step plan aligned with the brief and your current site:
+
+1. Content Proof Upgrade (highest impact)
+
+Add a short “Livrables & Méthodologie” block under each main service (Benchmarking, Ingénierie, IT/Cyber).
+Add 3–5 concrete KPI/outputs per service (ex: rapports QoS certifiables, dashboards SLA, audits post‑swap).
+2. Persona Paths (light navigation tweaks)
+
+Add a small “Vous êtes…” entry point on the homepage:
+Opérateur
+Régulateur
+Institution / Entreprise
+Each links to the most relevant service section.
+3. Institutional Credibility Layer
+
+Add a “Cadre & Conformité” mini‑section (QoS/QoE, SLA, conformité licences) with a neutral, regulated tone.
+4. Humanization Pass (anti‑robotic)
+
+Replace 6–8 overly generic sentences with contextual, grounded statements (from the PDF: mission, atouts, process).
+5. Visual Proof Alignment
+
+Swap key hero/service images with the stronger previews in assets/images/previews/ (telecom infra, fiber, SOC).

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" fill="none">
+  <rect width="1200" height="700" rx="36" fill="#0B1E2F"/>
+  <g opacity="0.18" stroke="#FFFFFF" stroke-width="1">
+    <path d="M0 120 H1200"/>
+    <path d="M0 240 H1200"/>
+    <path d="M0 360 H1200"/>
+    <path d="M0 480 H1200"/>
+    <path d="M0 600 H1200"/>
+  </g>
+
+  <g opacity="0.2">
+    <circle cx="1060" cy="120" r="56" fill="#00B2D6"/>
+    <circle cx="160" cy="560" r="64" fill="#FF7A18"/>
+  </g>
+
+  <g>
+    <rect x="60" y="70" width="330" height="110" rx="18" fill="#102C44" stroke="#1D425F" stroke-width="2"/>
+    <text x="90" y="120" font-family="Poppins, Arial" font-size="24" font-weight="700" fill="#E9F7FF">Equipe GWIT Terrain</text>
+    <text x="90" y="152" font-family="Poppins, Arial" font-size="16" fill="#B8D6EA">Etudes QoS &amp; SLA - reseaux 4G/5G</text>
+  </g>
+
+  <g>
+    <rect x="60" y="520" width="360" height="130" rx="20" fill="#0F273B" stroke="#1D425F" stroke-width="2"/>
+    <text x="90" y="565" font-family="Poppins, Arial" font-size="18" font-weight="600" fill="#E9F7FF">Tableau de bord SLA</text>
+    <g stroke="#00B2D6" stroke-width="3" fill="none">
+      <path d="M100 610 L160 590 L230 615 L300 580 L360 595"/>
+    </g>
+    <g fill="#00B2D6">
+      <circle cx="100" cy="610" r="5"/>
+      <circle cx="160" cy="590" r="5"/>
+      <circle cx="230" cy="615" r="5"/>
+      <circle cx="300" cy="580" r="5"/>
+      <circle cx="360" cy="595" r="5"/>
+    </g>
+  </g>
+
+  <g>
+    <rect x="450" y="80" width="310" height="210" rx="22" fill="#0F273B" stroke="#1D425F" stroke-width="2"/>
+    <text x="480" y="125" font-family="Poppins, Arial" font-size="18" font-weight="600" fill="#E9F7FF">Console Mesures QoS</text>
+    <text x="480" y="150" font-family="Poppins, Arial" font-size="14" fill="#B8D6EA">Latence • Debit • Disponibilite</text>
+    <rect x="480" y="168" width="250" height="88" rx="12" fill="#102C44"/>
+    <g stroke="#FF7A18" stroke-width="3" fill="none">
+      <path d="M490 230 L540 210 L600 235 L660 200 L720 210"/>
+    </g>
+  </g>
+
+  <g>
+    <rect x="820" y="60" width="320" height="240" rx="24" fill="#0F273B" stroke="#1D425F" stroke-width="2"/>
+    <text x="850" y="115" font-family="Poppins, Arial" font-size="20" font-weight="700" fill="#E9F7FF">Infrastructure reseau</text>
+    <text x="850" y="140" font-family="Poppins, Arial" font-size="14" fill="#B8D6EA">Antennes • Backhaul • Coeur</text>
+    <g stroke="#00B2D6" stroke-width="2">
+      <path d="M900 210 L880 250"/>
+      <path d="M980 210 L1000 250"/>
+      <path d="M1060 210 L1040 250"/>
+      <path d="M900 210 L980 210 L1060 210"/>
+    </g>
+    <g fill="#00B2D6">
+      <circle cx="900" cy="210" r="6"/>
+      <circle cx="980" cy="210" r="6"/>
+      <circle cx="1060" cy="210" r="6"/>
+    </g>
+  </g>
+
+  <g>
+    <rect x="430" y="340" width="560" height="300" rx="28" fill="#0F273B" stroke="#1D425F" stroke-width="2"/>
+    <rect x="470" y="380" width="150" height="210" rx="16" fill="#102C44"/>
+    <rect x="650" y="380" width="150" height="210" rx="16" fill="#102C44"/>
+    <rect x="830" y="380" width="130" height="210" rx="16" fill="#102C44"/>
+
+    <!-- Agent 1 -->
+    <circle cx="545" cy="430" r="28" fill="#E9F7FF"/>
+    <rect x="520" y="455" width="50" height="70" rx="12" fill="#FF7A18"/>
+    <rect x="515" y="520" width="60" height="50" rx="10" fill="#1A344A"/>
+    <rect x="505" y="395" width="80" height="20" rx="8" fill="#FF7A18"/>
+
+    <!-- Agent 2 -->
+    <circle cx="725" cy="430" r="28" fill="#E9F7FF"/>
+    <rect x="700" y="455" width="50" height="70" rx="12" fill="#FF7A18"/>
+    <rect x="695" y="520" width="60" height="50" rx="10" fill="#1A344A"/>
+    <rect x="685" y="395" width="80" height="20" rx="8" fill="#FF7A18"/>
+
+    <!-- Agent 3 -->
+    <circle cx="895" cy="430" r="24" fill="#E9F7FF"/>
+    <rect x="875" y="452" width="40" height="60" rx="10" fill="#FF7A18"/>
+    <rect x="868" y="512" width="54" height="48" rx="10" fill="#1A344A"/>
+    <rect x="862" y="400" width="66" height="18" rx="8" fill="#FF7A18"/>
+
+    <text x="470" y="620" font-family="Poppins, Arial" font-size="15" fill="#E9F7FF">Supervision NOC • Mesures QoS • Conformite SLA</text>
+  </g>
+
+  <g stroke="#00B2D6" stroke-width="2" opacity="0.7">
+    <path d="M390 125 L450 160"/>
+    <path d="M760 200 L820 180"/>
+    <path d="M720 300 L720 340"/>
+    <path d="M950 300 L900 340"/>
+  </g>
+</svg>
