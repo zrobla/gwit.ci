@@ -153,23 +153,96 @@ https://templatemo.com/tm-596-electric-xtra
             });
         });
 
-        // Feature tabs functionality
-        const tabs = document.querySelectorAll('.tab-item');
-        const panels = document.querySelectorAll('.content-panel');
+        // Feature tabs functionality (Why Nous)
+        const featureTab = document.getElementById('featureTab');
+        if (featureTab) {
+            const tabs = featureTab.querySelectorAll('.tab-item');
+            const panels = document.querySelectorAll('.content-panel');
 
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                const tabId = tab.getAttribute('data-tab');
-                
-                // Remove active class from all tabs and panels
-                tabs.forEach(t => t.classList.remove('active'));
-                panels.forEach(p => p.classList.remove('active'));
-                
-                // Add active class to clicked tab and corresponding panel
+            const activatePanel = (tab) => {
+                const target = tab.getAttribute('data-bs-target') || tab.getAttribute('data-tab');
+                if (!target) return;
+
+                tabs.forEach(t => {
+                    t.classList.remove('active');
+                    t.setAttribute('aria-selected', 'false');
+                });
+                panels.forEach(p => p.classList.remove('show', 'active'));
+
                 tab.classList.add('active');
-                document.getElementById(tabId).classList.add('active');
+                tab.setAttribute('aria-selected', 'true');
+
+                const panel = document.querySelector(target);
+                if (panel) {
+                    panel.classList.add('show', 'active');
+                }
+            };
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => activatePanel(tab));
             });
-        });
+
+            const initialTab = featureTab.querySelector('.tab-item.active') || tabs[0];
+            if (initialTab) {
+                activatePanel(initialTab);
+            }
+        }
+
+        // Case studies filter (homepage)
+        const caseStudySection = document.querySelector('.case-studies');
+        if (caseStudySection) {
+            const filterButtons = caseStudySection.querySelectorAll('[data-case-filter]');
+            const cards = caseStudySection.querySelectorAll('.case-study-card');
+
+            const applyFilter = (filter) => {
+                const isAll = filter === 'all';
+                caseStudySection.classList.toggle('is-filtered', !isAll);
+
+                filterButtons.forEach(btn => {
+                    const isActive = btn.dataset.caseFilter === filter;
+                    btn.classList.toggle('active', isActive);
+                    btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+                });
+
+                const featuredCards = Array.from(cards).filter(card => card.dataset.featured === 'true');
+
+                cards.forEach((card, index) => {
+                    const categories = (card.dataset.category || '').split(' ').filter(Boolean);
+                    const matchesCategory = categories.includes(filter);
+                    const isFeatured = card.dataset.featured === 'true';
+
+                    let show = false;
+                    if (isAll) {
+                        if (featuredCards.length) {
+                            show = isFeatured;
+                        } else {
+                            show = index < 3;
+                        }
+                    } else {
+                        show = matchesCategory;
+                    }
+
+                    card.classList.toggle('is-hidden', !show);
+                });
+            };
+
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', () => applyFilter(btn.dataset.caseFilter));
+            });
+
+            const openLinks = caseStudySection.querySelectorAll('[data-case-open]');
+            openLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    const filter = link.dataset.caseOpen;
+                    if (!filter) return;
+                    event.preventDefault();
+                    applyFilter(filter);
+                    caseStudySection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                });
+            });
+
+            applyFilter('all');
+        }
 
         // Form submission
         const contactForm = document.getElementById('contactForm');
@@ -208,9 +281,11 @@ https://templatemo.com/tm-596-electric-xtra
                 glitchText.setAttribute('data-text', glitchText.textContent);
                 
                 // Show subtitle after main text
-                setTimeout(() => {
-                    subtitle.classList.add('visible');
-                }, 800);
+                if (subtitle) {
+                    setTimeout(() => {
+                        subtitle.classList.add('visible');
+                    }, 800);
+                }
             }
 
             function animateTextOut(textSet) {
@@ -224,7 +299,9 @@ https://templatemo.com/tm-596-electric-xtra
                 });
                 
                 // Hide subtitle
-                subtitle.classList.remove('visible');
+                if (subtitle) {
+                    subtitle.classList.remove('visible');
+                }
             }
 
             function rotateText() {
@@ -258,108 +335,396 @@ https://templatemo.com/tm-596-electric-xtra
                 setInterval(rotateText, 5000); // Change every 5 seconds
             }, 4000);
         }
-
-        // Hero card slider
-        const heroCards = document.querySelectorAll('.hero-card');
+        // Hero slide rotator
+        const heroSlides = document.querySelectorAll('.hero-slide');
         const heroDots = document.querySelectorAll('.hero-slider-dot');
         const heroPrev = document.querySelector('.hero-slider-arrow.prev');
         const heroNext = document.querySelector('.hero-slider-arrow.next');
-        let heroCardIndex = 0;
+        
+        let heroSlideIndex = 0;
         let heroSliderInterval;
-        let heroAnimating = false;
-        const heroTransitionDuration = 900;
+        let heroIsAnimating = false;
+        const heroSlideDuration = 5000; // Auto-rotate every 5 seconds
 
-        function updateHeroDots(index) {
-            heroDots.forEach(dot => {
-                const target = parseInt(dot.getAttribute('data-target'), 10);
-                dot.classList.toggle('active', target === index);
+        function updateHeroSlide(index) {
+            // Remove active class from all slides
+            heroSlides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
             });
+
+            // Update dot indicators
+            heroDots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+
+            heroSlideIndex = index;
         }
 
-        function heroDirection(current, target) {
-            if (current === target) return 'forward';
-            if (current === heroCards.length - 1 && target === 0) return 'forward';
-            if (current === 0 && target === heroCards.length - 1) return 'backward';
-            return target > current ? 'forward' : 'backward';
+        function nextHeroSlide() {
+            const nextIndex = (heroSlideIndex + 1) % heroSlides.length;
+            updateHeroSlide(nextIndex);
         }
 
-        function transitionHeroCard(index, directionOverride) {
-            if (heroAnimating || index === heroCardIndex || !heroCards[index]) {
-                return false;
-            }
-
-            const currentCard = heroCards[heroCardIndex];
-            const nextCard = heroCards[index];
-            const direction = directionOverride || heroDirection(heroCardIndex, index);
-            const enterClass = direction === 'backward' ? 'enter-backward' : 'enter-forward';
-            const leaveClass = direction === 'backward' ? 'leave-backward' : 'leave-forward';
-            const animationClasses = ['enter-forward', 'enter-backward', 'leave-forward', 'leave-backward'];
-
-            heroAnimating = true;
-
-            currentCard.classList.remove(...animationClasses);
-            nextCard.classList.remove(...animationClasses);
-
-            nextCard.classList.add('active', enterClass);
-            currentCard.classList.add(leaveClass);
-            updateHeroDots(index);
-
-            setTimeout(() => {
-                currentCard.classList.remove('active', leaveClass);
-                nextCard.classList.remove(enterClass);
-                heroCardIndex = index;
-                heroAnimating = false;
-            }, heroTransitionDuration);
-
-            return true;
+        function prevHeroSlide() {
+            const prevIndex = (heroSlideIndex - 1 + heroSlides.length) % heroSlides.length;
+            updateHeroSlide(prevIndex);
         }
 
-        function startHeroSlider() {
+        function startHeroAutoRotate() {
             if (heroSliderInterval) clearInterval(heroSliderInterval);
             heroSliderInterval = setInterval(() => {
-                const nextIndex = (heroCardIndex + 1) % heroCards.length;
-                transitionHeroCard(nextIndex, 'forward');
-            }, 6000);
+                nextHeroSlide();
+            }, heroSlideDuration);
         }
 
-        if (heroCards.length) {
-            heroCards.forEach((card, i) => {
-                const animationClasses = ['enter-forward', 'enter-backward', 'leave-forward', 'leave-backward'];
-                card.classList.remove(...animationClasses);
-                card.classList.toggle('active', i === 0);
-            });
-            heroCardIndex = 0;
-            updateHeroDots(0);
-            startHeroSlider();
+        function resetHeroAutoRotate() {
+            startHeroAutoRotate();
+        }
 
-            heroDots.forEach(dot => {
+        // Initialize hero slider
+        if (heroSlides.length > 0) {
+            // Set first slide as active
+            updateHeroSlide(0);
+            startHeroAutoRotate();
+
+            // Dot click handlers
+            heroDots.forEach((dot, index) => {
                 dot.addEventListener('click', () => {
-                    const targetIndex = parseInt(dot.getAttribute('data-target'), 10);
-                    const didTransition = transitionHeroCard(targetIndex);
-                    if (didTransition) {
-                        startHeroSlider();
-                    }
+                    updateHeroSlide(index);
+                    resetHeroAutoRotate();
                 });
             });
 
+            // Arrow click handlers
             if (heroPrev) {
                 heroPrev.addEventListener('click', () => {
-                    const prevIndex = (heroCardIndex - 1 + heroCards.length) % heroCards.length;
-                    const didTransition = transitionHeroCard(prevIndex, 'backward');
-                    if (didTransition) {
-                        startHeroSlider();
-                    }
+                    prevHeroSlide();
+                    resetHeroAutoRotate();
                 });
             }
 
             if (heroNext) {
                 heroNext.addEventListener('click', () => {
-                    const nextIndex = (heroCardIndex + 1) % heroCards.length;
-                    const didTransition = transitionHeroCard(nextIndex, 'forward');
-                    if (didTransition) {
-                        startHeroSlider();
-                    }
+                    nextHeroSlide();
+                    resetHeroAutoRotate();
                 });
+            }
+
+            // Pause auto-rotate on hover
+            const heroSlider = document.querySelector('.hero-slider');
+            if (heroSlider) {
+                heroSlider.addEventListener('mouseenter', () => {
+                    if (heroSliderInterval) clearInterval(heroSliderInterval);
+                });
+
+                heroSlider.addEventListener('mouseleave', () => {
+                    startHeroAutoRotate();
+                });
+            }
+        }
+
+        // Partners carousel - initialize all carousels
+        const allCarousels = document.querySelectorAll('[data-carousel]');
+        allCarousels.forEach(partnersCarousel => {
+            const track = partnersCarousel.querySelector('.partners-track');
+            let cards = track ? Array.from(track.children) : [];
+            const prevBtn = partnersCarousel.querySelector('.partners-nav.prev');
+            const nextBtn = partnersCarousel.querySelector('.partners-nav.next');
+            const partnersSection = partnersCarousel.closest('.partners');
+            const progressBar = partnersSection ? partnersSection.querySelector('.partners-progress-bar') : null;
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            const baseCount = cards.length;
+            let autoFrame = null;
+            let loopWidth = 0;
+            const autoSpeed = 0.65;
+            let offset = 0;
+
+            const getStep = () => {
+                if (!cards.length || !track) return 0;
+                const cardWidth = cards[0].getBoundingClientRect().width;
+                const styles = window.getComputedStyle(track);
+                const gap = parseFloat(styles.columnGap || styles.gap || 0);
+                return cardWidth + gap;
+            };
+
+            const getLoopWidth = () => {
+                if (!track || !baseCount) return 0;
+                const baseItems = Array.from(track.children).slice(0, baseCount);
+                const last = baseItems[baseItems.length - 1];
+                if (!last) return 0;
+                return last.offsetLeft + last.offsetWidth;
+            };
+
+            const prepareLoop = () => {
+                if (!track || !cards.length || track.dataset.loopReady === 'true') return;
+                const baseWidth = getLoopWidth();
+                if (!baseWidth) return;
+                const viewportWidth = partnersCarousel.clientWidth || track.clientWidth;
+                const targetWidth = Math.max(viewportWidth * 2, baseWidth * 2);
+                const copies = Math.max(1, Math.ceil(targetWidth / baseWidth) - 1);
+                for (let i = 0; i < copies; i++) {
+                    cards.forEach(card => {
+                        const clone = card.cloneNode(true);
+                        clone.setAttribute('aria-hidden', 'true');
+                        track.appendChild(clone);
+                    });
+                }
+                cards = Array.from(track.children);
+                loopWidth = getLoopWidth();
+                track.dataset.loopReady = 'true';
+                offset = 0;
+                track.style.transform = 'translate3d(0, 0, 0)';
+            };
+
+            const updateProgress = () => {
+                if (!progressBar || !track) return;
+                const base = loopWidth || 1;
+                const current = base ? ((-offset % base) + base) % base : 0;
+                const progress = base ? current / base : 1;
+                progressBar.style.width = `${Math.min(100, Math.max(0, progress * 100))}%`;
+            };
+
+            const ensureLoop = () => {
+                prepareLoop();
+                loopWidth = getLoopWidth();
+            };
+
+            const applyTransform = () => {
+                if (!track) return;
+                track.style.transform = `translate3d(${offset}px, 0, 0)`;
+            };
+
+            const scrollByStep = direction => {
+                const step = getStep();
+                if (!step || !track) return;
+                ensureLoop();
+                if (!loopWidth) return;
+                offset += direction === 'next' ? -step : step;
+                if (-offset >= loopWidth) {
+                    offset += loopWidth;
+                } else if (-offset < 0) {
+                    offset -= loopWidth;
+                }
+                applyTransform();
+                updateProgress();
+            };
+
+            const tickAuto = () => {
+                if (!track || prefersReducedMotion) return;
+                ensureLoop();
+                if (!loopWidth) return;
+                offset -= autoSpeed;
+                if (-offset >= loopWidth) {
+                    offset += loopWidth;
+                }
+                applyTransform();
+                updateProgress();
+                autoFrame = requestAnimationFrame(tickAuto);
+            };
+
+            const startAuto = () => {
+                if (prefersReducedMotion || !track) return;
+                ensureLoop();
+                if (!loopWidth) return;
+                if (autoFrame) cancelAnimationFrame(autoFrame);
+                autoFrame = requestAnimationFrame(tickAuto);
+            };
+
+            const stopAuto = () => {
+                if (autoFrame) {
+                    cancelAnimationFrame(autoFrame);
+                    autoFrame = null;
+                }
+            };
+
+            if (track && cards.length) {
+                ensureLoop();
+                updateProgress();
+                window.addEventListener('resize', () => {
+                    ensureLoop();
+                    updateProgress();
+                    applyTransform();
+                });
+                if (prevBtn) {
+                    prevBtn.addEventListener('click', () => {
+                        scrollByStep('prev');
+                        startAuto();
+                    });
+                }
+                if (nextBtn) {
+                    nextBtn.addEventListener('click', () => {
+                        scrollByStep('next');
+                        startAuto();
+                    });
+                }
+                partnersCarousel.addEventListener('mouseenter', stopAuto);
+                partnersCarousel.addEventListener('mouseleave', startAuto);
+                partnersCarousel.addEventListener('focusin', stopAuto);
+                partnersCarousel.addEventListener('focusout', startAuto);
+                requestAnimationFrame(() => {
+                    ensureLoop();
+                    updateProgress();
+                    applyTransform();
+                    startAuto();
+                });
+                window.addEventListener('load', () => {
+                    ensureLoop();
+                    updateProgress();
+                    applyTransform();
+                    startAuto();
+                }, { once: true });
+            }
+        });
+
+        // Univers d'intervention carousel (distinct styling & behavior)
+        const universCarousel = document.querySelector('[data-univers-carousel]');
+        if (universCarousel) {
+            const track = universCarousel.querySelector('.univers-track');
+            let cards = track ? Array.from(track.children) : [];
+            const prevBtn = universCarousel.querySelector('.univers-nav.prev');
+            const nextBtn = universCarousel.querySelector('.univers-nav.next');
+            const progressBar = universCarousel.querySelector('.univers-progress-bar');
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            const baseCount = cards.length;
+            let autoFrame = null;
+            let loopWidth = 0;
+            const autoSpeed = 0.55;
+            let offset = 0;
+
+            const getStep = () => {
+                if (!cards.length || !track) return 0;
+                const cardWidth = cards[0].getBoundingClientRect().width;
+                const styles = window.getComputedStyle(track);
+                const gap = parseFloat(styles.columnGap || styles.gap || 0);
+                return cardWidth + gap;
+            };
+
+            const getLoopWidth = () => {
+                if (!track || !baseCount) return 0;
+                const baseItems = Array.from(track.children).slice(0, baseCount);
+                const last = baseItems[baseItems.length - 1];
+                if (!last) return 0;
+                return last.offsetLeft + last.offsetWidth;
+            };
+
+            const prepareLoop = () => {
+                if (!track || !cards.length || track.dataset.loopReady === 'true') return;
+                const baseWidth = getLoopWidth();
+                if (!baseWidth) return;
+                const viewportWidth = universCarousel.clientWidth || track.clientWidth;
+                const targetWidth = Math.max(viewportWidth * 2, baseWidth * 2);
+                const copies = Math.max(1, Math.ceil(targetWidth / baseWidth) - 1);
+                for (let i = 0; i < copies; i++) {
+                    cards.forEach(card => {
+                        const clone = card.cloneNode(true);
+                        clone.setAttribute('aria-hidden', 'true');
+                        track.appendChild(clone);
+                    });
+                }
+                cards = Array.from(track.children);
+                loopWidth = getLoopWidth();
+                track.dataset.loopReady = 'true';
+                offset = 0;
+                track.style.transform = 'translate3d(0, 0, 0)';
+            };
+
+            const updateProgress = () => {
+                if (!progressBar || !track) return;
+                const base = loopWidth || 1;
+                const current = base ? ((-offset % base) + base) % base : 0;
+                const progress = base ? current / base : 1;
+                progressBar.style.width = `${Math.min(100, Math.max(0, progress * 100))}%`;
+            };
+
+            const ensureLoop = () => {
+                prepareLoop();
+                loopWidth = getLoopWidth();
+            };
+
+            const applyTransform = () => {
+                if (!track) return;
+                track.style.transform = `translate3d(${offset}px, 0, 0)`;
+            };
+
+            const scrollByStep = direction => {
+                const step = getStep();
+                if (!step || !track) return;
+                ensureLoop();
+                if (!loopWidth) return;
+                offset += direction === 'next' ? -step : step;
+                if (-offset >= loopWidth) {
+                    offset += loopWidth;
+                } else if (-offset < 0) {
+                    offset -= loopWidth;
+                }
+                applyTransform();
+                updateProgress();
+            };
+
+            const tickAuto = () => {
+                if (!track || prefersReducedMotion) return;
+                ensureLoop();
+                if (!loopWidth) return;
+                offset -= autoSpeed;
+                if (-offset >= loopWidth) {
+                    offset += loopWidth;
+                }
+                applyTransform();
+                updateProgress();
+                autoFrame = requestAnimationFrame(tickAuto);
+            };
+
+            const startAuto = () => {
+                if (prefersReducedMotion || !track) return;
+                ensureLoop();
+                if (!loopWidth) return;
+                if (autoFrame) cancelAnimationFrame(autoFrame);
+                autoFrame = requestAnimationFrame(tickAuto);
+            };
+
+            const stopAuto = () => {
+                if (autoFrame) {
+                    cancelAnimationFrame(autoFrame);
+                    autoFrame = null;
+                }
+            };
+
+            if (track && cards.length) {
+                ensureLoop();
+                updateProgress();
+                window.addEventListener('resize', () => {
+                    ensureLoop();
+                    updateProgress();
+                    applyTransform();
+                });
+                if (prevBtn) {
+                    prevBtn.addEventListener('click', () => {
+                        scrollByStep('prev');
+                        startAuto();
+                    });
+                }
+                if (nextBtn) {
+                    nextBtn.addEventListener('click', () => {
+                        scrollByStep('next');
+                        startAuto();
+                    });
+                }
+                universCarousel.addEventListener('mouseenter', stopAuto);
+                universCarousel.addEventListener('mouseleave', startAuto);
+                universCarousel.addEventListener('focusin', stopAuto);
+                universCarousel.addEventListener('focusout', startAuto);
+                requestAnimationFrame(() => {
+                    ensureLoop();
+                    updateProgress();
+                    applyTransform();
+                    startAuto();
+                });
+                window.addEventListener('load', () => {
+                    ensureLoop();
+                    updateProgress();
+                    applyTransform();
+                    startAuto();
+                }, { once: true });
             }
         }
 
@@ -450,4 +815,130 @@ https://templatemo.com/tm-596-electric-xtra
                 if(related){ related.click(); } else { applyFilter(target); }
             }));
             applyFilter('all');
+        })();
+
+        // Premium Hero Counter Animation
+        (function initHeroCounters(){
+            const counters = document.querySelectorAll('.counter');
+            if(!counters.length) return;
+
+            const animateCounter = (element) => {
+                const target = parseInt(element.dataset.value) || 0;
+                const duration = 2000; // 2 seconds
+                const start = Date.now();
+
+                const update = () => {
+                    const elapsed = Date.now() - start;
+                    const progress = Math.min(elapsed / duration, 1);
+                    
+                    // Easing function for smooth animation
+                    const easeOutQuad = progress => 1 - (1 - progress) * (1 - progress);
+                    const current = Math.floor(target * easeOutQuad(progress));
+                    
+                    element.textContent = current;
+                    
+                    if(progress < 1) {
+                        requestAnimationFrame(update);
+                    }
+                };
+
+                update();
+            };
+
+            // Trigger animation when hero becomes visible
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if(entry.isIntersecting) {
+                        const counter = entry.target;
+                        if(!counter.classList.contains('animated')) {
+                            animateCounter(counter);
+                            counter.classList.add('animated');
+                        }
+                        observer.unobserve(counter);
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            counters.forEach(counter => observer.observe(counter));
+        })();
+
+        // Hero Scroll Indicator
+        (function initHeroScroll(){
+            const scrollIndicator = document.querySelector('.hero-scroll');
+            if(!scrollIndicator) return;
+
+            let lastScrollTop = 0;
+
+            window.addEventListener('scroll', () => {
+                const scrollTop = window.scrollY;
+                
+                // Hide when scrolled down, show when at top
+                if(scrollTop > 300) {
+                    scrollIndicator.style.opacity = '0';
+                    scrollIndicator.style.pointerEvents = 'none';
+                } else {
+                    scrollIndicator.style.opacity = '1';
+                    scrollIndicator.style.pointerEvents = 'auto';
+                }
+
+                lastScrollTop = scrollTop;
+            });
+
+            // Smooth scroll to next section on click
+            scrollIndicator.addEventListener('click', () => {
+                const nextSection = document.querySelector('.features-section');
+                if(nextSection) {
+                    nextSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        })();
+
+        // Hero Visual Cards Interaction
+        (function initHeroCards(){
+            const visualCards = document.querySelectorAll('.visual-card');
+            if(!visualCards.length) return;
+
+            visualCards.forEach((card, index) => {
+                card.addEventListener('mouseenter', function() {
+                    visualCards.forEach((c, i) => {
+                        if(i !== index) {
+                            c.style.opacity = '0.6';
+                            c.style.transform = 'scale(0.95)';
+                            c.style.zIndex = '0'; // Push non-hovered cards behind
+                        } else {
+                            c.style.zIndex = '10'; // Bring hovered card to front
+                        }
+                    });
+                });
+
+                card.addEventListener('mouseleave', function() {
+                    visualCards.forEach((c, i) => {
+                        c.style.opacity = '1';
+                        c.style.transform = '';
+                        // Reset to original z-index values
+                        if(c.classList.contains('card-1')) c.style.zIndex = '3';
+                        else if(c.classList.contains('card-2')) c.style.zIndex = '2';
+                        else if(c.classList.contains('card-3')) c.style.zIndex = '1';
+                    });
+                });
+            });
+        })();
+
+        // Floating Elements Parallax Effect
+        (function initFloatingElements(){
+            const floatingElements = document.querySelectorAll('.float-element');
+            if(!floatingElements.length) return;
+
+            window.addEventListener('mousemove', (e) => {
+                const x = e.clientX / window.innerWidth;
+                const y = e.clientY / window.innerHeight;
+
+                floatingElements.forEach((element, index) => {
+                    const moveX = (x - 0.5) * 20;
+                    const moveY = (y - 0.5) * 20;
+                    const delay = index * 0.05;
+
+                    element.style.transform = `translate(${moveX}px, ${moveY}px) rotate(${index * 60}deg)`;
+                });
+            });
         })();

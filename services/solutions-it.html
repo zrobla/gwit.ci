@@ -10,7 +10,7 @@
     <meta name="author" content="Global Wireless Integrated Technologies">
     <meta name="robots" content="index, follow">
     <meta name="format-detection" content="telephone=no">
-    <meta name="theme-color" content="#030a20">
+    <meta name="theme-color" content="#f5f8fc">
     <link rel="canonical" href="https://www.gwit.ci/services/solutions-it">
     <link rel="icon" type="image/x-icon" href="../assets/images/logos/gwit-cadre.ico">
     <link rel="apple-touch-icon" href="../assets/images/logos/gwit-cadre-2.png">
@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="../assets/css/fonts-local.css">
     <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
     <link href="../assets/css/gwit-web.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/gwit-refresh.css">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -104,7 +105,7 @@
                         <span class="service-pill">Cybersécurité</span>
                     </div>
                     <h1>Solutions Informatiques & Cyber</h1>
-                    <p class="service-lead">Nous concevons et intégrons des infrastructures réseaux, systèmes et applicatives résilientes pour libérer vos équipes métiers et sécuriser vos opérations.</p>
+                    <p class="service-lead">De l’architecture réseau au SOC, nous concevons des environnements IT sécurisés avec PRA/PCA, SLA et supervision 24/7 pour garantir la continuité des opérations.</p>
                     <div class="service-hero-metrics">
                         <div class="service-metric">
                             <span class="metric-label">Domaines</span>
@@ -136,9 +137,200 @@
                     <article class="service-aside-card">
                         <h3>Livrables clés</h3>
                         <ul class="service-aside-list">
-                            <li>Blueprint architectures & runbooks</li>
-                            <li>Politiques de sécurité & plans PRA/PCA</li>
-                            <li>Backlogs agiles & kits d’adoption utilisateurs</li>
+                            <li>Design LAN/WAN, Wi-Fi, datacenters & SOC</li>
+                            <li>Virtualisation, cloud privé et continuité d’activité</li>
+                            <li>Développements applicatifs & automatisation</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-section">
+            <div class="container">
+                <div class="service-section-heading">
+                    <p class="service-section-subtitle">Cybersécurité proactive</p>
+                    <h2 class="service-section-title">SOC 24/7 : Détection & Réponse</h2>
+                    <p class="service-section-text">Centre opérationnel de sécurité avec SIEM/SOAR pour surveillance continue et réactivité contractuelle.</p>
+                </div>
+                <div class="service-detail-grid">
+                    <article class="service-detail-card">
+                        <h3>Collecte & Détection</h3>
+                        <ul class="service-detail-list">
+                            <li><strong>SIEM</strong> : Splunk/QRadar/ELK pour agrégation logs (firewalls, IDS/IPS, endpoints)</li>
+                            <li><strong>EDR</strong> : CrowdStrike/SentinelOne pour menaces endpoints avancées</li>
+                            <li><strong>NTA</strong> : analyse trafic réseau (DarkTrace, anomalies comportementales)</li>
+                            <li>Correlation rules & threat intelligence feeds (MISP, STIX/TAXII)</li>
+                        </ul>
+                    </article>
+                    <article class="service-detail-card">
+                        <h3>Orchestration & Réponse (SOAR)</h3>
+                        <ul class="service-detail-list">
+                            <li><strong>SOAR</strong> : Cortex XSOAR/Demisto pour automatisation workflows réponse</li>
+                            <li><strong>Playbooks</strong> : scénarios pré-définis (phishing, malware, DDoS, data leak)</li>
+                            <li><strong>Ticketing</strong> : intégration ServiceNow/JIRA pour suivi incidents</li>
+                            <li>Forensics & post-mortem pour amélioration continue</li>
+                        </ul>
+                    </article>
+                    <article class="service-detail-card">
+                        <h3>SLA Réactivité</h3>
+                        <ul class="service-detail-list">
+                            <li><strong>Critique (P1)</strong> : Détection &lt;15min, Containment &lt;30min</li>
+                            <li><strong>Majeure (P2)</strong> : Détection &lt;1h, Résolution &lt;4h</li>
+                            <li><strong>Mineure (P3)</strong> : Détection &lt;4h, Résolution &lt;24h</li>
+                            <li>Reporting hebdo/mensuel : incidents, faux positifs, MTTD/MTTR</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-section" style="background: #f8f9fa;">
+            <div class="container">
+                <div class="service-section-heading">
+                    <p class="service-section-subtitle">Continuité d'activité</p>
+                    <h2 class="service-section-title">PRA/PCA : RTO/RPO par Tier</h2>
+                    <p class="service-section-text">Plans de reprise et continuité avec engagements contractuels selon criticité métier.</p>
+                </div>
+                <div class="service-detail-grid">
+                    <article class="service-detail-card">
+                        <h3>Tier 1 : Critique</h3>
+                        <p><strong>RTO</strong> : &lt;30min | <strong>RPO</strong> : &lt;5min</p>
+                        <ul class="service-detail-list">
+                            <li>Réplication synchrone active-active multi-site</li>
+                            <li>Cluster haute disponibilité (Pacemaker/DRBD, VMware FT)</li>
+                            <li>Basculement automatique sans intervention humaine</li>
+                            <li><em>Ex : Core banking, facturation temps réel, 911 emergency</em></li>
+                        </ul>
+                    </article>
+                    <article class="service-detail-card">
+                        <h3>Tier 2 : Important</h3>
+                        <p><strong>RTO</strong> : &lt;4h | <strong>RPO</strong> : &lt;1h</p>
+                        <ul class="service-detail-list">
+                            <li>Réplication asynchrone vers site distant (50-200 km)</li>
+                            <li>Snapshots horaires (ZFS/LVM, Storage replication)</li>
+                            <li>Procédures basculement semi-automatisées (runbooks)</li>
+                            <li><em>Ex : ERP, CRM, portail e-commerce, email enterprise</em></li>
+                        </ul>
+                    </article>
+                    <article class="service-detail-card">
+                        <h3>Tier 3 : Standard</h3>
+                        <p><strong>RTO</strong> : &lt;24h | <strong>RPO</strong> : &lt;24h</p>
+                        <ul class="service-detail-list">
+                            <li>Sauvegardes quotidiennes (Veeam/Bacula, 3-2-1 rule)</li>
+                            <li>Stockage offsite (bandes LTO, cloud S3/Glacier)</li>
+                            <li>Restauration manuelle sur environnement froid</li>
+                            <li><em>Ex : Data warehouse, archives, outils internes, dev/test</em></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-section">
+            <div class="container">
+                <div class="service-section-heading">
+                    <p class="service-section-subtitle">Sécurité intégrée</p>
+                    <h2 class="service-section-title">DevSecOps Pipeline</h2>
+                    <p class="service-section-text">Intégration sécurité dès le code source jusqu'au runtime avec tests automatisés.</p>
+                </div>
+                <div class="service-detail-grid">
+                    <article class="service-detail-card">
+                        <h3>Phase 1-3 : Code → Build</h3>
+                        <ul class="service-detail-list">
+                            <li><strong>1. Code (Git)</strong> : GitLab/GitHub avec branch protection, MFA, signed commits</li>
+                            <li><strong>2. SAST</strong> : SonarQube, Checkmarx - scan code source (vulns, secrets hardcodés)</li>
+                            <li><strong>3. Build (CI)</strong> : Jenkins/GitLab CI - compilation, tests unitaires, image Docker</li>
+                        </ul>
+                    </article>
+                    <article class="service-detail-card">
+                        <h3>Phase 4-5 : Test → Scan</h3>
+                        <ul class="service-detail-list">
+                            <li><strong>4. DAST</strong> : OWASP ZAP, Burp Suite - scan appli déployée (XSS, SQLi, CSRF)</li>
+                            <li><strong>5. SCA</strong> : Snyk, Dependabot - vulns librairies tierces (CVE tracking, SBOM)</li>
+                        </ul>
+                    </article>
+                    <article class="service-detail-card">
+                        <h3>Phase 6-7 : Deploy → Runtime</h3>
+                        <ul class="service-detail-list">
+                            <li><strong>6. Deploy (CD)</strong> : ArgoCD/Spinnaker - déploiement K8s avec policies OPA/Gatekeeper</li>
+                            <li><strong>7. Runtime Protection</strong> : Falco/Sysdig - détection comportements anormaux containers</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-section" style="background: #f8f9fa;">
+            <div class="container">
+                <div class="service-section-heading">
+                    <p class="service-section-subtitle">Monitoring & insights</p>
+                    <h2 class="service-section-title">Observabilité Full-Stack</h2>
+                    <p class="service-section-text">Visibilité complète (Metrics, Logs, Traces) pour détection proactive et root cause analysis.</p>
+                </div>
+                <div class="service-detail-grid">
+                    <article class="service-detail-card">
+                        <h3>Metrics (RED/USE)</h3>
+                        <ul class="service-detail-list">
+                            <li><strong>Stack</strong> : Prometheus + Grafana pour métriques infra & applicatives</li>
+                            <li><strong>RED</strong> : Rate (req/s), Errors (%), Duration (latency) - services</li>
+                            <li><strong>USE</strong> : Utilization, Saturation, Errors - infrastructure</li>
+                            <li>Alerting multi-canaux (PagerDuty, Slack, SMS) avec escalation</li>
+                        </ul>
+                    </article>
+                    <article class="service-detail-card">
+                        <h3>Logs (ELK Stack)</h3>
+                        <ul class="service-detail-list">
+                            <li><strong>Stack</strong> : Elasticsearch + Logstash/Fluentd + Kibana</li>
+                            <li>Parsing structured logs (JSON), indexation full-text recherchable</li>
+                            <li>Alertes seuils : taux erreurs HTTP 5xx, exceptions Java/Python</li>
+                            <li>Retention policies (hot/warm/cold tiers) pour optimisation coûts</li>
+                        </ul>
+                    </article>
+                    <article class="service-detail-card">
+                        <h3>Traces (Distributed Tracing)</h3>
+                        <ul class="service-detail-list">
+                            <li><strong>Stack</strong> : Jaeger/Zipkin pour traçage appels micro-services</li>
+                            <li>Spans avec contexte de propagation (headers W3C Trace Context)</li>
+                            <li>Analyse latence bout-en-bout, hot paths, bottlenecks</li>
+                            <li>Corrélation traces ↔ logs ↔ metrics (Grafana Tempo)</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-section">
+            <div class="container">
+                <div class="service-section-heading">
+                    <p class="service-section-subtitle">Livrables & méthodologie</p>
+                    <h2 class="service-section-title">Architecture IT sécurisée, mesurée et opérée</h2>
+                    <p class="service-section-text">Nous cadrons les exigences de sécurité, les niveaux de service et la continuité d’activité dès la conception.</p>
+                </div>
+                <div class="service-detail-grid">
+                    <article class="service-detail-card">
+                        <h3>Livrables clés</h3>
+                        <ul class="service-detail-list">
+                            <li>Blueprint LAN/WAN, Wi-Fi, datacenter & SOC</li>
+                            <li>Dossiers PRA/PCA, runbooks et procédures</li>
+                            <li>Plan de remédiation sécurité & gouvernance</li>
+                        </ul>
+                    </article>
+                    <article class="service-detail-card">
+                        <h3>KPI & outputs</h3>
+                        <ul class="service-detail-list">
+                            <li>RTO/RPO cibles et niveaux de disponibilité</li>
+                            <li>Temps de remédiation incidents (MTTR)</li>
+                            <li>Taux de conformité patching & durcissement</li>
+                            <li>Capacité & performance applicative</li>
+                        </ul>
+                    </article>
+                    <article class="service-detail-card">
+                        <h3>Méthodologie</h3>
+                        <ul class="service-detail-list">
+                            <li>Diagnostic risques & priorités métiers</li>
+                            <li>Design sécurisé, POC/MVP et tests</li>
+                            <li>Mise en production, MCO & transfert</li>
                         </ul>
                     </article>
                 </div>
