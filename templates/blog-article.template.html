@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>GWIT | {{title}}</title>
+    <meta name="description" content="{{meta_description}}">
+    <meta name="keywords" content="{{meta_keywords}}">
+    <meta name="author" content="Global Wireless Integrated Technologies">
+    <meta name="robots" content="index, follow">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#f5f8fc">
+    <link rel="canonical" href="{{canonical_url}}">
+    <link rel="icon" type="image/x-icon" href="assets/images/logos/gwit-cadre.ico">
+    <link rel="apple-touch-icon" href="assets/images/logos/gwit-cadre-2.png">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{title}}">
+    <meta property="og:description" content="{{meta_description}}">
+    <meta property="og:url" content="{{og_url}}">
+    <meta property="og:site_name" content="Global Wireless Integrated Technologies">
+    <meta property="og:image" content="{{og_image}}">
+    <meta property="og:image:alt" content="Campagne QoS 5G - GWIT">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{title}}">
+    <meta name="twitter:description" content="{{meta_description}}">
+    <meta name="twitter:image" content="{{og_image}}">
+    <link rel="stylesheet" href="assets/css/fonts-local.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="assets/css/gwit-web.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/gwit-refresh.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "{{title}}",
+        "datePublished": "{{date_published}}",
+        "dateModified": "{{date_modified}}",
+        "author": {
+            "@type": "Organization",
+            "name": "Global Wireless Integrated Technologies"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Global Wireless Integrated Technologies",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.gwit.ci/assets/images/logos/gwit-1.jpeg"
+            }
+        },
+        "image": "{{og_image}}"
+    }
+    </script>
+</head>
+<body class="preloader-active inner-page blog-article-page" data-active-nav="blog">
+    <div id="site-preloader" aria-hidden="true">
+        <div class="preloader-card">
+            <img src="assets/images/logos/gwit-preloader.webp" alt="Préchargement GWIT" class="preloader-image">
+        </div>
+    </div>
+    <div class="grid-bg"></div>
+    <div class="gradient-overlay"></div>
+    <div class="scanlines"></div>
+    <div class="shapes-container">
+        <div class="shape shape-circle"></div>
+        <div class="shape shape-triangle"></div>
+        <div class="shape shape-square"></div>
+    </div>
+    <div id="particles"></div>
+
+    <nav id="navbar" class="navbar navbar-expand-lg">
+        <div class="container nav-container">
+            <a href="index.html#home" class="navbar-brand logo-link">
+                <img src="assets/images/logos/gwit-1.jpeg" alt="GWIT logo" class="logo-img">
+            </a>
+            <button class="navbar-toggler menu-toggle" id="menuToggle" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navLinks">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-links">
+                    <li class="nav-item"><a href="index.html#home" class="nav-link" data-nav-target="home" data-section="home">Accueil</a></li>
+                    <li class="nav-item"><a href="a-propos.html" class="nav-link" data-nav-target="about">A Propos de Nous</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="nos-services.html" class="nav-link" data-nav-target="services">Nos Services <span class="nav-caret" aria-hidden="true">▾</span></a>
+                        <div class="nav-dropdown">
+                            <a href="services/benchmarking.html" class="dropdown-link">Benchmarking &amp; Intelligence QoS</a>
+                            <a href="services/ingenierie-telecom.html" class="dropdown-link">Ingénierie Télécom 360°</a>
+                            <a href="services/installations-telecom.html" class="dropdown-link">Déploiement &amp; Installations</a>
+                            <a href="services/solutions-it.html" class="dropdown-link">Solutions IT &amp; Cyber</a>
+                            <a href="services/conseil-formation.html" class="dropdown-link">Conseil &amp; Formations</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="notre-blog.html" class="nav-link" data-nav-target="blog">Blog</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link" data-nav-target="contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="article-hero">
+            <div class="container article-hero-grid">
+                <div class="article-hero-content">
+                    <div class="article-hero-panel">
+                        <span class="article-hero-badge">Article de blog · GWIT</span>
+                        <div class="article-tags">
+{{hero_tags_html}}
+                        </div>
+                        <h1>{{title}}</h1>
+                        <p>{{hero_intro}}</p>
+                        <div class="article-meta">
+                            <span>{{date_display}}</span>
+                            <span>{{author}}</span>
+                        </div>
+                        <div class="article-hero-actions">
+                            <a class="service-secondary-cta" href="notre-blog.html#articles">Retour au blog</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-hero-summary">
+                    <div class="summary-card">
+                        <h3>Points clés</h3>
+                        <ul class="summary-list">
+{{key_points_html}}
+                        </ul>
+                    </div>
+                    <div class="summary-card summary-impact">
+                        <h3>Impacts business</h3>
+                        <ul class="summary-list">
+{{business_impacts_html}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="article-body">
+            <div class="container article-body-grid">
+                <article class="article-content">
+{{article_intro_html}}
+
+{{article_sections_html}}
+                </article>
+
+                <aside class="article-aside">
+                    <div class="article-card">
+                        <h3>Table des matières</h3>
+                        <ul class="article-toc">
+{{toc_items_html}}
+                        </ul>
+                    </div>
+                    <div class="article-card article-card-highlight">
+                        <h3>{{service_title}}</h3>
+                        <p>{{service_description}}</p>
+                        <a class="service-secondary-cta" href="{{service_link}}">{{service_cta}}</a>
+                    </div>
+                    <div class="article-card article-related">
+                        <h3>Autres articles à consulter</h3>
+                        <div class="related-articles">
+{{related_articles_html}}
+                        </div>
+                    </div>
+                    <div class="article-aside-extra">
+                    <div class="article-card">
+                        <h3>Besoin d’un briefing</h3>
+                        <p>Recevez un pré‑cadrage sur vos KPI prioritaires, vos zones sensibles et vos obligations réglementaires.</p>
+                        <a class="service-primary-cta" href="briefings-telecoms.html">Demander un briefing</a>
+                    </div>
+                    <div class="article-card article-newsletter">
+                        <h3>Newsletter GWIT Insights</h3>
+                        <p>Recevez chaque mois un brief exécutif, des indicateurs clés et nos retours terrain.</p>
+                        <form class="article-newsletter-form">
+                            <input type="email" name="newsletter_email" placeholder="Email professionnel" required>
+                            <button type="submit" class="submit-btn">S’inscrire</button>
+                        </form>
+                    </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="assets/images/logos/gwit-1.jpeg" alt="GWIT" class="footer-logo">
+                <p>Global Wireless <br>Integrated Technologies<br>Partenaire des opérateurs, TowersCo, régulateurs et des entreprises.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="nos-services.html">Services</a></li>
+                    <li><a href="notre-blog">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Expertises</h4>
+                <ul>
+                    <li><a href="services/benchmarking.html">Benchmarking QoS</a></li>
+                    <li><a href="services/ingenierie-telecom.html">Ingénierie Télécom</a></li>
+                    <li><a href="services/installations-telecom.html">Réseaux</a></li>
+                    <li><a href="services/solutions-it.html">Solutions IT</a></li>
+                    <li><a href="services/conseil-formation.html">Conseil & support</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <ul>
+                    <li>06 BP 1394 Abidjan 06</li>
+                    <li><a href="mailto:contact@gwit.ci">contact@gwit.ci</a></li>
+                    <li><a href="tel:+2250700077373">+225 07 00 077 373</a></li>
+                    <li><a href="tel:+2250548077373">+225 05 48 077 373</a></li>
+                    <li><a href="https://maps.google.com/?q=Global+Wireless+Integrated+Technologies+06BP+1394+Abidjan+06+Abidjan" target="_blank" rel="noopener">Notre Localisation</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Suivez-nous</h4>
+                <div class="footer-socials">
+                    <a href="#">LinkedIn</a>
+                    <!--<a href="#">Twitter</a>
+                    <a href="#">YouTube</a>-->
+                </div>
+                <p class="footer-note">Time to act. Time to do better.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 GWIT. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="#privacy">Politique de confidentialité</a>
+                <a href="#terms">Conditions</a>
+                <a href="#careers">Carrières</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/gwit-web-script.js"></script>
+</body>
+</html>

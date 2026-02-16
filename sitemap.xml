@@ -69,6 +69,110 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- Article QoS 5G -->
+  <url>
+    <loc>https://www.gwit.ci/blog-qos-5g</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Article Plan directeur 2G-5G -->
+  <url>
+    <loc>https://www.gwit.ci/blog-plan-directeur-2g-5g</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Article SOC opérateurs africains -->
+  <url>
+    <loc>https://www.gwit.ci/blog-soc-operateurs-africains</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Article Automatiser exploitation IT -->
+  <url>
+    <loc>https://www.gwit.ci/blog-automatiser-exploitation-it</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Article Coaching NOC/RNO post-swap -->
+  <url>
+    <loc>https://www.gwit.ci/blog-coacher-equipes-noc-rno</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Article Ingénierie verte -->
+  <url>
+    <loc>https://www.gwit.ci/blog-ingenierie-verte-sobriete-energetique</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Article Data storytelling Comex -->
+  <url>
+    <loc>https://www.gwit.ci/blog-data-storytelling-comex</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Article Programmes & alliances GWIT -->
+  <url>
+    <loc>https://www.gwit.ci/blog-programmes-alliances-gwit</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Analyse Campagne QoS 5G -->
+  <url>
+    <loc>https://www.gwit.ci/analyse-campagne-qos-5g</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Analyse Supervision SOC/NOC -->
+  <url>
+    <loc>https://www.gwit.ci/analyse-supervision-soc-noc</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Analyse Data storytelling comités -->
+  <url>
+    <loc>https://www.gwit.ci/analyse-data-storytelling-comites</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Demande d'analyses -->
+  <url>
+    <loc>https://www.gwit.ci/demande-analyses</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Briefings Telecoms -->
+  <url>
+    <loc>https://www.gwit.ci/briefings-telecoms</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   
   <!-- Contact -->
   <url>

@@ -798,23 +798,77 @@ https://templatemo.com/tm-596-electric-xtra
             const filterButtons = document.querySelectorAll('.blog-filter-button');
             const blogCards = document.querySelectorAll('.blog-card');
             const badgeButtons = document.querySelectorAll('.blog-badge');
+            const searchInput = document.querySelector('[data-blog-search]');
+            const sortButton = document.querySelector('[data-blog-sort]');
+            const viewButtons = document.querySelectorAll('[data-blog-view]');
+            const feedGrid = document.querySelector('.blog-feed-grid');
+            const countValue = document.querySelector('[data-blog-count]');
+
             if(!filterButtons.length || !blogCards.length){return;}
-            const applyFilter = key => {
-                const normalized = key === 'all' ? null : key;
-                blogCards.forEach(card => {
-                    const categories = (card.dataset.categories || '').split(/\s+/).filter(Boolean);
-                    const match = !normalized || categories.includes(normalized);
-                    card.classList.toggle('is-hidden', !match);
-                });
-                filterButtons.forEach(btn => btn.classList.toggle('active', btn.dataset.filter === key));
+
+            const cardItems = Array.from(blogCards).map(card => ({
+                el: card,
+                categories: (card.dataset.categories || '').split(/\s+/).filter(Boolean),
+                date: new Date(card.dataset.date || '1970-01-01'),
+                text: card.textContent.toLowerCase()
+            }));
+
+            let activeFilter = 'all';
+            let searchTerm = '';
+
+            const updateCount = count => {
+                if(countValue){ countValue.textContent = String(count); }
             };
-            filterButtons.forEach(btn => btn.addEventListener('click', () => applyFilter(btn.dataset.filter)));
+
+            const applyFilters = () => {
+                let visibleCount = 0;
+                cardItems.forEach(item => {
+                    const matchesFilter = activeFilter === 'all' || item.categories.includes(activeFilter);
+                    const matchesSearch = !searchTerm || item.text.includes(searchTerm);
+                    const isVisible = matchesFilter && matchesSearch;
+                    item.el.classList.toggle('is-hidden', !isVisible);
+                    if(isVisible){ visibleCount += 1; }
+                });
+                filterButtons.forEach(btn => btn.classList.toggle('active', btn.dataset.filter === activeFilter));
+                updateCount(visibleCount);
+            };
+
+            const setFilter = key => {
+                activeFilter = key;
+                applyFilters();
+            };
+
+            filterButtons.forEach(btn => btn.addEventListener('click', () => setFilter(btn.dataset.filter)));
+
             badgeButtons.forEach(btn => btn.addEventListener('click', () => {
                 const target = btn.dataset.filterTarget;
                 const related = Array.from(filterButtons).find(b => b.dataset.filter === target);
-                if(related){ related.click(); } else { applyFilter(target); }
+                if(related){ related.click(); } else { setFilter(target); }
             }));
-            applyFilter('all');
+
+            if(searchInput){
+                searchInput.addEventListener('input', () => {
+                    searchTerm = searchInput.value.trim().toLowerCase();
+                    applyFilters();
+                });
+            }
+
+            if(sortButton && feedGrid){
+                sortButton.addEventListener('click', () => {
+                    const sorted = cardItems.slice().sort((a, b) => b.date - a.date);
+                    sorted.forEach(item => feedGrid.appendChild(item.el));
+                    sortButton.classList.add('active');
+                });
+            }
+
+            if(viewButtons.length && feedGrid){
+                viewButtons.forEach(btn => btn.addEventListener('click', () => {
+                    viewButtons.forEach(button => button.classList.toggle('active', button === btn));
+                    feedGrid.dataset.blogView = btn.dataset.blogView || 'grid';
+                }));
+            }
+
+            applyFilters();
         })();
 
         // Premium Hero Counter Animation
@@ -941,4 +995,64 @@ https://templatemo.com/tm-596-electric-xtra
                     element.style.transform = `translate(${moveX}px, ${moveY}px) rotate(${index * 60}deg)`;
                 });
             });
+        })();
+
+        // Form validation messages in French
+        (function initFrenchFormValidation(){
+            const getMessage = (el) => {
+                const v = el.validity;
+                if (v.valueMissing) {
+                    if (el.type === 'checkbox' || el.type === 'radio' || el.tagName === 'SELECT') {
+                        return 'Veuillez sélectionner une option.';
+                    }
+                    return 'Veuillez renseigner ce champ.';
+                }
+                if (v.typeMismatch) {
+                    if (el.type === 'email') return 'Veuillez saisir une adresse email valide.';
+                    if (el.type === 'url') return 'Veuillez saisir une URL valide.';
+                    return 'Veuillez saisir une valeur valide.';
+                }
+                if (v.patternMismatch) return 'Veuillez respecter le format demandé.';
+                if (v.tooShort) return `Veuillez saisir au moins ${el.minLength} caractères.`;
+                if (v.tooLong) return `Veuillez saisir au maximum ${el.maxLength} caractères.`;
+                if (v.rangeUnderflow) return `La valeur minimale est ${el.min}.`;
+                if (v.rangeOverflow) return `La valeur maximale est ${el.max}.`;
+                if (v.stepMismatch) return 'Veuillez saisir une valeur valide.';
+                return 'Veuillez vérifier ce champ.';
+            };
+
+            document.addEventListener('invalid', (event) => {
+                const el = event.target;
+                if (!el || !el.validity || !el.setCustomValidity) return;
+                el.setCustomValidity(getMessage(el));
+            }, true);
+
+            const clearMessage = (event) => {
+                const el = event.target;
+                if (el && el.setCustomValidity) {
+                    el.setCustomValidity('');
+                }
+            };
+
+            document.addEventListener('input', clearMessage, true);
+            document.addEventListener('change', clearMessage, true);
+        })();
+
+        // Prefill analysis request form from URL params
+        (function initAnalysisRequestPrefill(){
+            const form = document.querySelector('.analysis-request-form');
+            if (!form) return;
+
+            const params = new URLSearchParams(window.location.search);
+            const type = params.get('type');
+            const source = params.get('source');
+            const category = params.get('category');
+
+            const typeField = form.querySelector('[name="analysis_type"]');
+            const sourceField = form.querySelector('[name="analysis_source"]');
+            const categoryField = form.querySelector('[name="analysis_category"]');
+
+            if (type && typeField) typeField.value = type;
+            if (source && sourceField) sourceField.value = source;
+            if (category && categoryField) categoryField.value = category;
         })();

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>GWIT | {{title}}</title>
+    <meta name="description" content="{{meta_description}}">
+    <meta name="keywords" content="{{meta_keywords}}">
+    <meta name="author" content="Global Wireless Integrated Technologies">
+    <meta name="robots" content="index, follow">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#f5f8fc">
+    <link rel="canonical" href="{{canonical_url}}">
+    <link rel="icon" type="image/x-icon" href="assets/images/logos/gwit-cadre.ico">
+    <link rel="apple-touch-icon" href="assets/images/logos/gwit-cadre-2.png">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{title}}">
+    <meta property="og:description" content="{{meta_description}}">
+    <meta property="og:url" content="{{og_url}}">
+    <meta property="og:site_name" content="Global Wireless Integrated Technologies">
+    <meta property="og:image" content="{{og_image}}">
+    <meta property="og:image:alt" content="Analyse GWIT">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{title}}">
+    <meta name="twitter:description" content="{{meta_description}}">
+    <meta name="twitter:image" content="{{og_image}}">
+    <link rel="stylesheet" href="assets/css/fonts-local.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="assets/css/gwit-web.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/gwit-refresh.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Report",
+        "headline": "{{title}}",
+        "datePublished": "{{date_published}}",
+        "dateModified": "{{date_modified}}",
+        "author": {
+            "@type": "Organization",
+            "name": "Global Wireless Integrated Technologies"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Global Wireless Integrated Technologies",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.gwit.ci/assets/images/logos/gwit-1.jpeg"
+            }
+        },
+        "image": "{{og_image}}"
+    }
+    </script>
+</head>
+<body class="preloader-active inner-page blog-analysis-page" data-active-nav="blog">
+    <div id="site-preloader" aria-hidden="true">
+        <div class="preloader-card">
+            <img src="assets/images/logos/gwit-preloader.webp" alt="Préchargement GWIT" class="preloader-image">
+        </div>
+    </div>
+    <div class="grid-bg"></div>
+    <div class="gradient-overlay"></div>
+    <div class="scanlines"></div>
+    <div class="shapes-container">
+        <div class="shape shape-circle"></div>
+        <div class="shape shape-triangle"></div>
+        <div class="shape shape-square"></div>
+    </div>
+    <div id="particles"></div>
+
+    <nav id="navbar" class="navbar navbar-expand-lg">
+        <div class="container nav-container">
+            <a href="index.html#home" class="navbar-brand logo-link">
+                <img src="assets/images/logos/gwit-1.jpeg" alt="GWIT logo" class="logo-img">
+            </a>
+            <button class="navbar-toggler menu-toggle" id="menuToggle" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navLinks">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-links">
+                    <li class="nav-item"><a href="index.html#home" class="nav-link" data-nav-target="home" data-section="home">Accueil</a></li>
+                    <li class="nav-item"><a href="a-propos.html" class="nav-link" data-nav-target="about">A Propos de Nous</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="nos-services.html" class="nav-link" data-nav-target="services">Nos Services <span class="nav-caret" aria-hidden="true">▾</span></a>
+                        <div class="nav-dropdown">
+                            <a href="services/benchmarking.html" class="dropdown-link">Benchmarking &amp; Intelligence QoS</a>
+                            <a href="services/ingenierie-telecom.html" class="dropdown-link">Ingénierie Télécom 360°</a>
+                            <a href="services/installations-telecom.html" class="dropdown-link">Déploiement &amp; Installations</a>
+                            <a href="services/solutions-it.html" class="dropdown-link">Solutions IT &amp; Cyber</a>
+                            <a href="services/conseil-formation.html" class="dropdown-link">Conseil &amp; Formations</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="notre-blog.html" class="nav-link" data-nav-target="blog">Blog</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link" data-nav-target="contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="analysis-hero">
+            <div class="container analysis-hero-grid">
+                <div class="analysis-hero-panel">
+                    <span class="analysis-badge">Analyse GWIT</span>
+                    <div class="analysis-tags">
+{{hero_tags_html}}
+                    </div>
+                    <h1>{{title}}</h1>
+                    <p>{{hero_intro}}</p>
+                    <div class="analysis-meta">
+                        <span>{{date_display}}</span>
+                        <span>{{author}}</span>
+                    </div>
+                    <div class="analysis-cta">
+                        <a class="service-primary-cta" href="demande-analyses.html?type={{analysis_title_encoded}}&source={{analysis_slug}}&category={{analysis_category_param}}">Demander l’analyse complète</a>
+                        <a class="service-secondary-cta" href="notre-blog.html#articles">Retour au blog</a>
+                    </div>
+                    <p class="analysis-request-note">Analyse complète sur demande.</p>
+                </div>
+                <div class="analysis-hero-side">
+                    <div class="analysis-summary-card">
+                        <h2>Résumé exécutif</h2>
+{{analysis_summary_html}}
+                    </div>
+                    <div class="analysis-scope-card">
+                        <h3>Périmètre &amp; lecture</h3>
+                        <ul>
+{{analysis_scope_html}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="analysis-kpis">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Indicateurs clés</h2>
+                </div>
+                <div class="analysis-kpi-grid">
+{{kpi_cards_html}}
+                </div>
+            </div>
+        </section>
+
+        <section class="analysis-signals">
+            <div class="container analysis-two-col">
+                <div class="analysis-block">
+                    <h2>Lecture des signaux</h2>
+                    <ul>
+{{signals_html}}
+                    </ul>
+                </div>
+                <div class="analysis-block analysis-impacts">
+                    <h2>Impacts business</h2>
+                    <ul>
+{{impacts_html}}
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="analysis-scenarios">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Scénarios &amp; options</h2>
+                </div>
+                <div class="analysis-scenario-grid">
+{{scenarios_html}}
+                </div>
+            </div>
+        </section>
+
+        <section class="analysis-recommendation">
+            <div class="container">
+                <div class="analysis-reco-card">
+                    <h2>Recommandation GWIT</h2>
+{{recommendation_html}}
+                </div>
+            </div>
+        </section>
+
+        <section class="analysis-risks">
+            <div class="container analysis-two-col">
+                <div class="analysis-block">
+                    <h2>Risques &amp; dépendances</h2>
+                    <ul>
+{{risks_html}}
+                    </ul>
+                </div>
+                <div class="analysis-block">
+                    <h2>Sources &amp; fiabilité</h2>
+                    <ul>
+{{sources_html}}
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="analysis-cta-final">
+            <div class="container">
+                <div class="analysis-cta-card">
+                    <div>
+                        <h2>Besoin de l’analyse complète ?</h2>
+                        <p>Recevez la version détaillée avec données consolidées, scénarios approfondis et recommandations adaptées à votre contexte.</p>
+                    </div>
+                    <div class="analysis-cta-actions">
+                        <a class="service-primary-cta" href="demande-analyses.html?type={{analysis_title_encoded}}&source={{analysis_slug}}&category={{analysis_category_param}}">Demander l’analyse complète</a>
+                        <a class="service-secondary-cta" href="notre-blog.html#articles">Retour au blog</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="assets/images/logos/gwit-1.jpeg" alt="GWIT" class="footer-logo">
+                <p>Global Wireless <br>Integrated Technologies<br>Partenaire des opérateurs, TowersCo, régulateurs et des entreprises.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="nos-services.html">Services</a></li>
+                    <li><a href="notre-blog">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Expertises</h4>
+                <ul>
+                    <li><a href="services/benchmarking.html">Benchmarking QoS</a></li>
+                    <li><a href="services/ingenierie-telecom.html">Ingénierie Télécom</a></li>
+                    <li><a href="services/installations-telecom.html">Réseaux</a></li>
+                    <li><a href="services/solutions-it.html">Solutions IT</a></li>
+                    <li><a href="services/conseil-formation.html">Conseil & support</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Siège</h4>
+                <ul>
+                    <li>Abidjan, Côte d'Ivoire</li>
+                    <li>06 BP 1394 Abidjan 06</li>
+                    <li><a href="mailto:contact@gwit.ci">contact@gwit.ci</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 GWIT. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/gwit-web-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>GWIT | Supervision SOC/NOC convergée</title>
+    <meta name="description" content="Analyse GWIT sur la convergence SOC/NOC : signaux clés, impacts business, scénarios d’architecture et recommandations pour infrastructures critiques.">
+    <meta name="keywords" content="SOC NOC, supervision convergée, cybersécurité, observabilité, GWIT">
+    <meta name="author" content="Global Wireless Integrated Technologies">
+    <meta name="robots" content="index, follow">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#f5f8fc">
+    <link rel="canonical" href="https://www.gwit.ci/analyse-supervision-soc-noc">
+    <link rel="icon" type="image/x-icon" href="assets/images/logos/gwit-cadre.ico">
+    <link rel="apple-touch-icon" href="assets/images/logos/gwit-cadre-2.png">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Supervision SOC/NOC convergée">
+    <meta property="og:description" content="Analyse GWIT sur la convergence SOC/NOC : signaux clés, impacts business, scénarios d’architecture et recommandations pour infrastructures critiques.">
+    <meta property="og:url" content="https://www.gwit.ci/analyse-supervision-soc-noc">
+    <meta property="og:site_name" content="Global Wireless Integrated Technologies">
+    <meta property="og:image" content="https://www.gwit.ci/assets/images/previews/solutions-informatiques.jpg">
+    <meta property="og:image:alt" content="Analyse GWIT">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Supervision SOC/NOC convergée">
+    <meta name="twitter:description" content="Analyse GWIT sur la convergence SOC/NOC : signaux clés, impacts business, scénarios d’architecture et recommandations pour infrastructures critiques.">
+    <meta name="twitter:image" content="https://www.gwit.ci/assets/images/previews/solutions-informatiques.jpg">
+    <link rel="stylesheet" href="assets/css/fonts-local.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="assets/css/gwit-web.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/gwit-refresh.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Report",
+        "headline": "Supervision SOC/NOC convergée",
+        "datePublished": "2026-02-10",
+        "dateModified": "2026-02-15",
+        "author": {
+            "@type": "Organization",
+            "name": "Global Wireless Integrated Technologies"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Global Wireless Integrated Technologies",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.gwit.ci/assets/images/logos/gwit-1.jpeg"
+            }
+        },
+        "image": "https://www.gwit.ci/assets/images/previews/solutions-informatiques.jpg"
+    }
+    </script>
+</head>
+<body class="preloader-active inner-page blog-analysis-page" data-active-nav="blog">
+    <div id="site-preloader" aria-hidden="true">
+        <div class="preloader-card">
+            <img src="assets/images/logos/gwit-preloader.webp" alt="Préchargement GWIT" class="preloader-image">
+        </div>
+    </div>
+    <div class="grid-bg"></div>
+    <div class="gradient-overlay"></div>
+    <div class="scanlines"></div>
+    <div class="shapes-container">
+        <div class="shape shape-circle"></div>
+        <div class="shape shape-triangle"></div>
+        <div class="shape shape-square"></div>
+    </div>
+    <div id="particles"></div>
+
+    <nav id="navbar" class="navbar navbar-expand-lg">
+        <div class="container nav-container">
+            <a href="index.html#home" class="navbar-brand logo-link">
+                <img src="assets/images/logos/gwit-1.jpeg" alt="GWIT logo" class="logo-img">
+            </a>
+            <button class="navbar-toggler menu-toggle" id="menuToggle" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navLinks">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-links">
+                    <li class="nav-item"><a href="index.html#home" class="nav-link" data-nav-target="home" data-section="home">Accueil</a></li>
+                    <li class="nav-item"><a href="a-propos.html" class="nav-link" data-nav-target="about">A Propos de Nous</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="nos-services.html" class="nav-link" data-nav-target="services">Nos Services <span class="nav-caret" aria-hidden="true">▾</span></a>
+                        <div class="nav-dropdown">
+                            <a href="services/benchmarking.html" class="dropdown-link">Benchmarking &amp; Intelligence QoS</a>
+                            <a href="services/ingenierie-telecom.html" class="dropdown-link">Ingénierie Télécom 360°</a>
+                            <a href="services/installations-telecom.html" class="dropdown-link">Déploiement &amp; Installations</a>
+                            <a href="services/solutions-it.html" class="dropdown-link">Solutions IT &amp; Cyber</a>
+                            <a href="services/conseil-formation.html" class="dropdown-link">Conseil &amp; Formations</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="notre-blog.html" class="nav-link" data-nav-target="blog">Blog</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link" data-nav-target="contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="analysis-hero">
+            <div class="container analysis-hero-grid">
+                <div class="analysis-hero-panel">
+                    <span class="analysis-badge">Analyse GWIT</span>
+                    <div class="analysis-tags">
+<span>IT &amp; Cyber</span>
+                        <span>SOC/NOC</span>
+                        <span>Résilience</span>
+                    </div>
+                    <h1>Supervision SOC/NOC convergée</h1>
+                    <p>Lecture exécutive des signaux critiques qui rendent la convergence SOC/NOC incontournable pour les opérateurs : risques, priorités d’investissement et modèle cible.</p>
+                    <div class="analysis-meta">
+                        <span>10 février 2026</span>
+                        <span>Par le Desk GWIT IT & Cyber</span>
+                    </div>
+                    <div class="analysis-cta">
+                        <a class="service-primary-cta" href="demande-analyses.html?type=Supervision%20SOC/NOC%20converg%C3%A9e&source=analyse-supervision-soc-noc&category=IT%20%26%20Cyber">Demander l’analyse complète</a>
+                        <a class="service-secondary-cta" href="notre-blog.html#articles">Retour au blog</a>
+                    </div>
+                    <p class="analysis-request-note">Analyse complète sur demande.</p>
+                </div>
+                <div class="analysis-hero-side">
+                    <div class="analysis-summary-card">
+                        <h2>Résumé exécutif</h2>
+<p>La séparation stricte SOC/NOC ralentit la réponse aux incidents hybrides (sécurité + réseau). La convergence permet de réduire le MTTR, d’unifier les playbooks et d’améliorer la continuité des services critiques. Les bénéfices se matérialisent quand la gouvernance, les KPI et l’outillage sont alignés.</p>
+                    </div>
+                    <div class="analysis-scope-card">
+                        <h3>Périmètre &amp; lecture</h3>
+                        <ul>
+<li><strong>Périmètre :</strong> Cœur réseau, plateformes IT, services digitaux.</li>
+                            <li><strong>Objectif :</strong> Réduire le temps de détection et d’escalade.</li>
+                            <li><strong>Lecture :</strong> Risques opérationnels et arbitrages d’architecture.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="analysis-kpis">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Indicateurs clés</h2>
+                </div>
+                <div class="analysis-kpi-grid">
+<article class="analysis-kpi-card">
+                        <h4>MTTD / MTTR</h4>
+                        <p>Temps de détection et de résolution des incidents critiques.</p>
+                    </article>
+                    <article class="analysis-kpi-card">
+                        <h4>Corrélation d’alertes</h4>
+                        <p>Taux d’incidents corrélés SOC/NOC vs incidents isolés.</p>
+                    </article>
+                    <article class="analysis-kpi-card">
+                        <h4>Disponibilité services</h4>
+                        <p>Continuité des services à forte valeur business.</p>
+                    </article>
+                    <article class="analysis-kpi-card">
+                        <h4>Taux de faux positifs</h4>
+                        <p>Qualité des règles et efficacité du triage.</p>
+                    </article>
+                    <article class="analysis-kpi-card">
+                        <h4>Conformité SLA</h4>
+                        <p>Respect des engagements clients et réglementaires.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="analysis-signals">
+            <div class="container analysis-two-col">
+                <div class="analysis-block">
+                    <h2>Lecture des signaux</h2>
+                    <ul>
+<li>Les incidents hybrides (sécurité + réseau) sont traités plus lentement sans convergence.</li>
+                            <li>Les playbooks non alignés génèrent des escalades répétées.</li>
+                            <li>La visibilité partielle réduit la précision du diagnostic.</li>
+                    </ul>
+                </div>
+                <div class="analysis-block analysis-impacts">
+                    <h2>Impacts business</h2>
+                    <ul>
+<li>Réduction du risque d’interruption prolongée.</li>
+                            <li>Amélioration de la perception client et des SLA.</li>
+                            <li>Optimisation des coûts d’exploitation via une gouvernance unifiée.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="analysis-scenarios">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Scénarios &amp; options</h2>
+                </div>
+                <div class="analysis-scenario-grid">
+<article class="analysis-scenario">
+                        <h4>Option A — Convergence progressive</h4>
+                        <p>Aligner les KPI, la gouvernance et les playbooks avant fusion des outils.</p>
+                    </article>
+                    <article class="analysis-scenario">
+                        <h4>Option B — SOC/NOC hybride</h4>
+                        <p>Cellule dédiée aux incidents critiques avec supervision unifiée.</p>
+                    </article>
+                    <article class="analysis-scenario">
+                        <h4>Option C — Convergence complète</h4>
+                        <p>Plateforme unique d’observabilité + orchestration des réponses.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="analysis-recommendation">
+            <div class="container">
+                <div class="analysis-reco-card">
+                    <h2>Recommandation GWIT</h2>
+<p>GWIT recommande une convergence progressive : alignement KPI, playbooks communs et cellule d’incidents critiques, puis intégration des outils d’observabilité. Cette trajectoire limite les risques tout en accélérant la maturité opérationnelle.</p>
+                    <ul>
+                        <li>30 jours : cartographie des incidents hybrides et KPI communs.</li>
+                        <li>60 jours : cellule SOC/NOC critique et playbooks unifiés.</li>
+                        <li>90 jours : plan d’intégration outillage & automatisation.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="analysis-risks">
+            <div class="container analysis-two-col">
+                <div class="analysis-block">
+                    <h2>Risques &amp; dépendances</h2>
+                    <ul>
+<li>Résistances organisationnelles entre équipes sécurité et réseau.</li>
+                            <li>Outils hétérogènes et coûts d’intégration.</li>
+                            <li>Manque de données corrélées pour la phase initiale.</li>
+                    </ul>
+                </div>
+                <div class="analysis-block">
+                    <h2>Sources &amp; fiabilité</h2>
+                    <ul>
+<li>Bonnes pratiques SOC/NOC (référentiels opérateurs).</li>
+                            <li>Cadres ITIL/eTOM pour l’exploitation critique.</li>
+                            <li>Retours d’expérience GWIT sur supervision convergée.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="analysis-cta-final">
+            <div class="container">
+                <div class="analysis-cta-card">
+                    <div>
+                        <h2>Besoin de l’analyse complète ?</h2>
+                        <p>Recevez la version détaillée avec données consolidées, scénarios approfondis et recommandations adaptées à votre contexte.</p>
+                    </div>
+                    <div class="analysis-cta-actions">
+                        <a class="service-primary-cta" href="demande-analyses.html?type=Supervision%20SOC/NOC%20converg%C3%A9e&source=analyse-supervision-soc-noc&category=IT%20%26%20Cyber">Demander l’analyse complète</a>
+                        <a class="service-secondary-cta" href="notre-blog.html#articles">Retour au blog</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="assets/images/logos/gwit-1.jpeg" alt="GWIT" class="footer-logo">
+                <p>Global Wireless <br>Integrated Technologies<br>Partenaire des opérateurs, TowersCo, régulateurs et des entreprises.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="nos-services.html">Services</a></li>
+                    <li><a href="notre-blog">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Expertises</h4>
+                <ul>
+                    <li><a href="services/benchmarking.html">Benchmarking QoS</a></li>
+                    <li><a href="services/ingenierie-telecom.html">Ingénierie Télécom</a></li>
+                    <li><a href="services/installations-telecom.html">Réseaux</a></li>
+                    <li><a href="services/solutions-it.html">Solutions IT</a></li>
+                    <li><a href="services/conseil-formation.html">Conseil & support</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Siège</h4>
+                <ul>
+                    <li>Abidjan, Côte d'Ivoire</li>
+                    <li>06 BP 1394 Abidjan 06</li>
+                    <li><a href="mailto:contact@gwit.ci">contact@gwit.ci</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 GWIT. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/gwit-web-script.js"></script>
+</body>
+</html>
