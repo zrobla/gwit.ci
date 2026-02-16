@@ -14,7 +14,7 @@
   "date_published": "2026-01-15",
   "date_modified": "2026-02-15",
   "service_title": "Services associés",
-  "service_description": "Solutions IT & cyber, SOC/NOC, virtualisation et sécurisation des plateformes critiques.",
+  "service_description": "Solutions IT & SECURITE, SOC/NOC, virtualisation et sécurisation des plateformes critiques.",
   "service_link": "services/solutions-it.html",
   "service_cta": "Voir le service",
   "toc_items_html": "<li><a href=\"#resume\">Résumé exécutif</a></li>\n                            <li><a href=\"#contexte\">Contexte Afrique & Côte d’Ivoire</a></li>\n                            <li><a href=\"#surfaces\">Surface d’attaque</a></li>\n                            <li><a href=\"#dispositif\">Dispositif SOC</a></li>\n                            <li><a href=\"#coordination\">Coordination SOC/NOC</a></li>\n                            <li><a href=\"#kpis\">KPIs SOC</a></li>\n                            <li><a href=\"#gwit\">Approche GWIT</a></li>\n                            <li><a href=\"#sources\">Sources</a></li>",

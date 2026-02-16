@@ -9,7 +9,7 @@
   "hero_tags_html": "<span>IT &amp; Cyber</span>\n                        <span>SOC/NOC</span>\n                        <span>Résilience</span>",
   "hero_intro": "Lecture exécutive des signaux critiques qui rendent la convergence SOC/NOC incontournable pour les opérateurs : risques, priorités d’investissement et modèle cible.",
   "date_display": "10 février 2026",
-  "author": "Par le Desk GWIT IT & Cyber",
+  "author": "Par le Desk GWIT IT & SECURITE",
   "date_published": "2026-02-10",
   "date_modified": "2026-02-15",
   "analysis_summary_html": "<p>La séparation stricte SOC/NOC ralentit la réponse aux incidents hybrides (sécurité + réseau). La convergence permet de réduire le MTTR, d’unifier les playbooks et d’améliorer la continuité des services critiques. Les bénéfices se matérialisent quand la gouvernance, les KPI et l’outillage sont alignés.</p>",
@@ -21,5 +21,5 @@
   "recommendation_html": "<p>GWIT recommande une convergence progressive : alignement KPI, playbooks communs et cellule d’incidents critiques, puis intégration des outils d’observabilité. Cette trajectoire limite les risques tout en accélérant la maturité opérationnelle.</p>\n                    <ul>\n                        <li>30 jours : cartographie des incidents hybrides et KPI communs.</li>\n                        <li>60 jours : cellule SOC/NOC critique et playbooks unifiés.</li>\n                        <li>90 jours : plan d’intégration outillage & automatisation.</li>\n                    </ul>",
   "risks_html": "<li>Résistances organisationnelles entre équipes sécurité et réseau.</li>\n                            <li>Outils hétérogènes et coûts d’intégration.</li>\n                            <li>Manque de données corrélées pour la phase initiale.</li>",
   "sources_html": "<li>Bonnes pratiques SOC/NOC (référentiels opérateurs).</li>\n                            <li>Cadres ITIL/eTOM pour l’exploitation critique.</li>\n                            <li>Retours d’expérience GWIT sur supervision convergée.</li>",
-  "analysis_category": "IT & Cyber"
+  "analysis_category": "IT & SECURITE"
 }

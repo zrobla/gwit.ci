@@ -53,7 +53,7 @@
 - Livrables: Dossiers as-built & PV d'acceptance, Taux de sites livrés dans les délais, Non-conformités corrigées J+7
 - CTA: "Voir les capacités"
 
-**Solutions IT & Cyber**
+**Solutions IT & SECURITE**
 - Pour qui: IT & Sécurité
 - Livrables: Blueprint LAN/WAN & segmentation, RTO/RPO & runbooks d'exploitation, Plan de remédiation sécurité
 - CTA: "Consulter la feuille de route"
@@ -78,8 +78,8 @@
 - Portail client disponible 24/7
 
 ✅ **Canaux dédiés**:
-- Assistance commerciale: business@gwit.ci / +225 05 48 077 373
-- Support technique: support@gwit.ci / Portail 24/7
+- Assistance commerciale: contact@gwit.ci / +225 05 48 077 373
+- Support technique: contact@gwit.ci / Portail 24/7
 - Visites & réunions: 06 BP 1394 Abidjan 06
 
 ## Conclusion Phase 2

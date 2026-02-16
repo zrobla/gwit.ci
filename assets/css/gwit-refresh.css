@@ -239,6 +239,93 @@ nav#navbar.scrolled .dropdown-link {
     color: var(--surface);
 }
 
+.nav-utilities {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-left: 18px;
+}
+
+.nav-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(10, 26, 45, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow: var(--shadow-soft);
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.nav-badge-link {
+    color: var(--ink-strong);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav-badge-link:hover {
+    color: var(--brand-orange);
+}
+
+.nav-badge-sep {
+    color: rgba(233, 243, 255, 0.6);
+}
+
+.nav-lang {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.lang-sep {
+    color: rgba(233, 243, 255, 0.6);
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+}
+
+.lang-flag {
+    width: 28px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 10px 24px rgba(4, 10, 20, 0.35);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.lang-flag:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 30px rgba(4, 10, 20, 0.45);
+}
+
+.lang-flag.fr {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'><rect width='1' height='2' fill='%230055A4'/><rect x='1' width='1' height='2' fill='%23ffffff'/><rect x='2' width='1' height='2' fill='%23EF4135'/></svg>");
+}
+
+.lang-flag.en {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'><rect width='60' height='30' fill='%23012169'/><path d='M0 0 L60 30 M60 0 L0 30' stroke='%23ffffff' stroke-width='6'/><path d='M0 0 L60 30 M60 0 L0 30' stroke='%23C8102E' stroke-width='3'/><path d='M30 0 V30 M0 15 H60' stroke='%23ffffff' stroke-width='10'/><path d='M30 0 V30 M0 15 H60' stroke='%23C8102E' stroke-width='6'/></svg>");
+}
+
+@media (max-width: 991px) {
+    .nav-utilities {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 12px 0 0;
+        gap: 10px;
+    }
+
+    .nav-badge {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
 nav#navbar.scrolled .dropdown-link:hover {
     background: rgba(12, 31, 54, 0.08);
     color: var(--surface);
@@ -1326,6 +1413,166 @@ nav#navbar.scrolled .dropdown-link:hover {
     background: rgba(10, 26, 45, 0.9);
     border-color: rgba(255, 255, 255, 0.14);
     box-shadow: 0 22px 50px rgba(2, 10, 22, 0.5);
+}
+
+.contact-page .service-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 150px 0 120px;
+    background: linear-gradient(135deg, rgba(6, 18, 32, 0.96), rgba(10, 26, 45, 0.92));
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-page .service-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('assets/images/previews/monde-connecte.avif');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    mix-blend-mode: screen;
+}
+
+.contact-page .service-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 12% 20%, rgba(0, 178, 214, 0.32), transparent 48%), radial-gradient(circle at 50% 85%, rgba(0, 199, 163, 0.22), transparent 60%);
+    opacity: 0.9;
+}
+
+.contact-page .service-hero-container {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-page .contact-hero-emphasis {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.coming-soon-page .coming-soon-hero .service-hero-text h1 {
+    max-width: 22ch;
+}
+
+.coming-soon-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: rgba(0, 178, 214, 0.18);
+    border: 1px solid rgba(0, 178, 214, 0.4);
+    color: #e9f7ff;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.coming-soon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    align-items: stretch;
+}
+
+.coming-soon-panel {
+    background: linear-gradient(150deg, rgba(12, 31, 54, 0.92), rgba(8, 22, 40, 0.96));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    padding: 22px 24px;
+    box-shadow: var(--shadow-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.coming-soon-panel h3 {
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.coming-soon-panel p {
+    margin: 0;
+    color: rgba(233, 243, 255, 0.8);
+}
+
+.contact-page a[href^="mailto"],
+.contact-page a[href^="tel"] {
+    color: var(--brand-orange);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: var(--brand-orange);
+    text-underline-offset: 3px;
+}
+
+.contact-page a[href^="mailto"]:hover,
+.contact-page a[href^="tel"]:hover {
+    color: #ffffff;
+    text-decoration-color: #ffffff;
+}
+
+.contact-page .contact-hub a[href^="https://maps.google"] {
+    color: var(--brand-orange);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: var(--brand-orange);
+    text-underline-offset: 3px;
+}
+
+.contact-page .contact-hub a[href^="https://maps.google"]:hover {
+    color: #ffffff;
+    text-decoration-color: #ffffff;
+}
+
+.contact-hero-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin: 22px 0;
+}
+
+.contact-hero-card {
+    position: relative;
+    overflow: hidden;
+    padding: 16px 18px;
+    border-radius: 16px;
+    background: linear-gradient(150deg, rgba(12, 31, 54, 0.88), rgba(8, 22, 40, 0.92));
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: var(--shadow-soft);
+}
+
+.contact-hero-card::before {
+    content: "";
+    position: absolute;
+    inset: -40% 35% auto -30%;
+    height: 140px;
+    background: radial-gradient(circle, rgba(0, 178, 214, 0.28), transparent 70%);
+    opacity: 0.8;
+}
+
+.contact-hero-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-hero-card-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+}
+
+.contact-hero-card p {
+    margin: 8px 0 0;
+    color: var(--ink-strong);
+    font-size: 0.95rem;
+    font-weight: 600;
 }
 
 .about-page .service-hero {
@@ -4715,7 +4962,8 @@ body:is(.inner-page, .service-page) :is(
     background: rgba(12, 31, 54, 0.85);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 16px;
-    padding: 14px 16px;
+    padding: 10px 12px;
+    min-height: 74px;
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -4725,11 +4973,17 @@ body:is(.inner-page, .service-page) :is(
 .briefings-page .briefing-metric .metric-value {
     color: #ffffff;
     font-weight: 700;
+    font-size: 1.1rem;
 }
 
 .briefings-page .briefing-metric .metric-label {
     color: rgba(233, 243, 255, 0.75);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .briefings-page .briefing-hero-card {
@@ -4758,6 +5012,7 @@ body:is(.inner-page, .service-page) :is(
     display: flex;
     flex-direction: column;
     gap: 12px;
+    min-height: 100%;
 }
 
 .briefings-page .briefing-hero-card-content ul {
@@ -4779,6 +5034,29 @@ body:is(.inner-page, .service-page) :is(
     position: absolute;
     left: 0;
     color: var(--brand-azure);
+}
+
+.briefings-page .briefing-hero-proof {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.briefings-page .briefing-hero-proof span {
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgba(233, 243, 255, 0.9);
+}
+
+.briefings-page .briefing-hero-card-content .service-primary-cta {
+    margin-top: auto;
 }
 
 .briefings-page .briefing-form-section {

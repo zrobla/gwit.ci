@@ -72,7 +72,7 @@ Héros : infrastructures-telecoms-cyan.jpg
 Benchmarking QoS : africa-benchmarking-telecoms.jpg
 Ingénierie télécom : telecoms-ingenierie.jpg
 Déploiement/Installation : deux-pylones-ciel-cyan.jpg
-IT & Cyber : solutions-informatiques.jpg
+IT & SECURITE : solutions-informatiques.jpg
 Support & Formations : formation-gwit.jpg
 Leadership/Expertise : tech-worker.jpg
 Phase 6 — Synthèse Client‑Ready
