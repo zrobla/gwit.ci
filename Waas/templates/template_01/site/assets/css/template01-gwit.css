@@ -90,11 +90,11 @@ body.premium-active{padding-top:var(--gwit-header-offset)}
 .scroll-top.is-visible{opacity:1;visibility:visible;transform:translateY(0) scale(1)}
 .scroll-top:hover{box-shadow:0 18px 34px rgba(0,152,152,.36);background:#009898;color:#fff}
 .scroll-top:focus-visible{outline:3px solid rgba(0,152,152,.45);outline-offset:2px}
-.about-hero-premium{position:relative;overflow:hidden;min-height:620px;padding:0!important}
-.about-hero-premium .active{height:620px;max-height:none;overflow:hidden}
-.about-hero-premium img{height:620px;max-height:none;object-fit:cover;object-position:center center}
-.about-hero-premium .hero-overlay{position:absolute;inset:0;z-index:2;display:flex;align-items:center;justify-content:flex-start;padding:calc(var(--gwit-header-offset) - 10px) clamp(16px,3vw,60px) clamp(18px,2.8vw,40px);box-sizing:border-box;min-height:0;background:linear-gradient(102deg,rgba(6,25,72,.64) 0%,rgba(6,25,72,.38) 52%,rgba(6,25,72,.16) 100%)}
-.about-hero-layout{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:18px;align-items:center;min-height:620px;padding:16px 0}
+.about-hero-premium{position:relative;overflow:hidden;min-height:clamp(620px,78vh,820px);padding:0!important}
+.about-hero-premium .active{position:absolute;inset:0;height:100%;max-height:none;overflow:hidden}
+.about-hero-premium img{height:100%;max-height:none;min-height:100%;object-fit:cover;object-position:center center}
+.about-hero-premium .hero-overlay{position:relative;inset:auto;z-index:2;display:flex;align-items:center;justify-content:flex-start;padding:calc(var(--gwit-header-offset) - 10px) clamp(16px,3vw,60px) clamp(18px,2.8vw,40px);box-sizing:border-box;min-height:clamp(620px,78vh,820px);background:linear-gradient(102deg,rgba(6,25,72,.64) 0%,rgba(6,25,72,.38) 52%,rgba(6,25,72,.16) 100%)}
+.about-hero-layout{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:18px;align-items:center;min-height:100%;padding:16px 0}
 .about-hero-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;max-width:680px}
 .about-hero-kicker{display:inline-flex;align-items:center;padding:6px 12px;border-radius:999px;background:rgba(0,152,152,.28);color:#e1fbf7;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
 .about-hero-copy h1{margin:0;color:#fff;font-size:clamp(1.45rem,1.08rem + 1vw,2.2rem);line-height:1.2;font-weight:800}
@@ -108,7 +108,7 @@ body.premium-active{padding-top:var(--gwit-header-offset)}
 .about-hero-meta-grid strong,.about-hero-facts span{display:block;font-size:.68rem;letter-spacing:.11em;text-transform:uppercase;color:#9fdcff;font-weight:800;margin-bottom:5px}
 .about-hero-meta-grid p,.about-hero-facts p{margin:0;color:#fff;font-size:.82rem;line-height:1.45;font-weight:600}
 .about-hero-facts{display:grid;gap:8px}
-.about-parallax-band{min-height:clamp(180px,30vh,320px);background-size:50% auto;background-position:center;background-repeat:no-repeat;background-attachment:fixed;border-top:1px solid rgba(6,25,72,.1);border-bottom:1px solid rgba(6,25,72,.1);position:relative;overflow:hidden}
+.about-parallax-band{min-height:clamp(130px,20vh,220px);background-size:clamp(280px,46vw,620px) auto;background-position:center center;background-repeat:no-repeat;background-attachment:fixed;border-top:1px solid rgba(6,25,72,.1);border-bottom:1px solid rgba(6,25,72,.1);position:relative;overflow:hidden}
 .about-parallax-band:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,25,72,.24),rgba(6,25,72,.34));pointer-events:none}
 .about-summary-card{background:#fff;border:1px solid rgba(6,25,72,.14);border-radius:18px;box-shadow:0 10px 24px rgba(6,25,72,.07);padding:22px 24px;transition:transform .25s ease,box-shadow .25s ease}
 .about-summary-card:hover{transform:translateY(-1px);box-shadow:0 14px 30px rgba(6,25,72,.10)}
@@ -1121,15 +1121,15 @@ body.service-page .case-study-actions{display:flex;justify-content:flex-start}
   .hero-premium-metrics .metric-card strong{font-size:1rem}
   .hero-premium-metrics .metric-card small{font-size:.65rem}
   .hero-premium-arrow{width:34px;height:34px}
-  .about-hero-premium{min-height:560px}
-  .about-hero-premium .active{max-height:none}
-  .about-hero-premium .active{height:560px}
-  .about-hero-premium img{height:560px}
-  .about-hero-layout{grid-template-columns:1fr;gap:12px;min-height:560px;padding:10px 0}
+  .about-hero-premium{min-height:640px}
+  .about-hero-premium .active{max-height:none;height:100%}
+  .about-hero-premium img{height:100%;min-height:100%}
+  .about-hero-premium .hero-overlay{min-height:640px}
+  .about-hero-layout{grid-template-columns:1fr;gap:12px;min-height:100%;padding:10px 0}
   .about-hero-copy p{font-size:.88rem;line-height:1.55}
   .about-hero-panel{padding:12px}
   .about-hero-panel{margin-top:0}
-  .about-parallax-band{background-attachment:scroll;min-height:200px}
+  .about-parallax-band{background-attachment:scroll;min-height:170px;background-size:clamp(250px,65vw,520px) auto}
   .about-hero-actions .btn{width:100%}
   .nav-lang-switch{width:100%;justify-content:center;align-items:center;margin:.45rem auto .1rem}
   .nav-lang-switch .lang-flag{width:32px;height:32px;font-size:.95rem}
@@ -1189,10 +1189,11 @@ body.service-page .case-study-actions{display:flex;justify-content:flex-start}
   .hero-premium-controls{bottom:12px;gap:8px}
   .hero-premium-arrow{width:30px;height:30px;font-size:1.05rem}
   .hero-premium-dot{width:8px;height:8px}
-  .about-hero-premium{min-height:500px}
-  .about-hero-premium .active{height:500px}
-  .about-hero-premium img{height:500px}
-  .about-hero-layout{min-height:500px}
+  .about-hero-premium{min-height:560px}
+  .about-hero-premium .active{height:100%}
+  .about-hero-premium img{height:100%;min-height:100%}
+  .about-hero-premium .hero-overlay{min-height:560px}
+  .about-hero-layout{min-height:100%}
   .about-hero-kicker{font-size:.64rem;padding:5px 8px}
   .about-hero-copy h1{font-size:1.2rem}
   .about-hero-copy p{font-size:.82rem}
@@ -1201,7 +1202,7 @@ body.service-page .case-study-actions{display:flex;justify-content:flex-start}
   .about-hero-meta-grid article,.about-hero-facts article{padding:9px 10px}
   .about-hero-meta-grid strong,.about-hero-facts span{font-size:.62rem}
   .about-hero-meta-grid p,.about-hero-facts p{font-size:.77rem}
-  .about-parallax-band{min-height:165px}
+  .about-parallax-band{min-height:145px;background-size:clamp(220px,78vw,460px) auto}
   .scroll-top{width:42px;height:42px;right:14px;bottom:14px;border-radius:14px}
   .about-summary-card{border-radius:14px}
   .about-pill-group span,.about-focus-strip span{font-size:.68rem;padding:5px 8px}
