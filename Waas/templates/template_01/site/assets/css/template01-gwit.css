@@ -1122,7 +1122,7 @@ body.service-page .case-study-actions{display:flex;justify-content:flex-start}
   .hero-premium-metrics .metric-card small{font-size:.65rem}
   .hero-premium-arrow{width:34px;height:34px}
   .about-hero-premium{min-height:640px}
-  .about-hero-premium .active{max-height:none;height:100%}
+  .about-hero-premium .active{position:absolute;inset:0;max-height:none;height:100%}
   .about-hero-premium img{height:100%;min-height:100%}
   .about-hero-premium .hero-overlay{min-height:640px}
   .about-hero-layout{grid-template-columns:1fr;gap:12px;min-height:100%;padding:10px 0}
@@ -1190,7 +1190,7 @@ body.service-page .case-study-actions{display:flex;justify-content:flex-start}
   .hero-premium-arrow{width:30px;height:30px;font-size:1.05rem}
   .hero-premium-dot{width:8px;height:8px}
   .about-hero-premium{min-height:560px}
-  .about-hero-premium .active{height:100%}
+  .about-hero-premium .active{position:absolute;inset:0;height:100%}
   .about-hero-premium img{height:100%;min-height:100%}
   .about-hero-premium .hero-overlay{min-height:560px}
   .about-hero-layout{min-height:100%}
