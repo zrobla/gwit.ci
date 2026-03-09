@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#061948">
+  <meta name="msapplication-navbutton-color" content="#061948">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#061948">
+  <meta name="robots" content="index, follow">
+  <title>GWIT | Benchmarking QoS, Ingénierie Télécom & Solutions IT</title>
+  <meta name="description" content="GWIT accompagne vos programmes télécom et IT avec des livrables mesurables.">
+  <link rel="icon" type="image/x-icon" href="assets/images/logos/gwit-cadre.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <link rel="stylesheet" href="assets/css/main.min.css?v=20260303r1">
+  <link rel="stylesheet" href="assets/css/template01-gwit.css?v=20260303r1">
+</head>
+<body class="premium-active home-page">
+  <a class="skip-link visually-hidden-focusable" href="#main">Aller au contenu</a>
+  
+<header class="premium-header sticky-top" role="banner">
+  <nav class="navbar navbar-expand-lg navbar-premium" aria-label="Navigation principale">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" aria-label="GWIT">
+        <img src="assets/images/logos/gwit-1.jpeg" alt="GWIT logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navPremium" aria-controls="navPremium" aria-expanded="false" aria-label="Menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navPremium">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link nav-link-compact active" href="index.html">ACCUEIL</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-compact" href="a-propos.html">À PROPOS</a></li>
+          <li class="nav-item dropdown nav-item-services">
+            <a class="nav-link nav-link-compact service-main-link" href="nos-services.html">SERVICES</a>
+            <button class="nav-link nav-link-compact dropdown-toggle dropdown-toggle-split" id="navSolutions" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Afficher la liste des services"></button>
+            <ul class="dropdown-menu" aria-labelledby="navSolutions">
+              <li><a class="dropdown-item" href="services/benchmarking.html">Benchmarking QoS</a></li>
+              <li><a class="dropdown-item" href="services/ingenierie-telecom.html">Ingénierie Télécom</a></li>
+              <li><a class="dropdown-item" href="services/installations-telecom.html">Déploiement & Installations</a></li>
+              <li><a class="dropdown-item" href="services/solutions-it.html">Solutions IT</a></li>
+              <li><a class="dropdown-item" href="services/conseil-formation.html">Support & Formation</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link nav-link-compact" href="gwit-blog-telecom-it-analyses.html">BLOG & RESSOURCES</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-compact" href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="nav-meta d-lg-flex align-items-center gap-2 ms-lg-3">
+          <a class="meta-pill meta-pill-phone" href="tel:+2250700077373"><i class="fa fa-phone"></i><span>+225 07 00 07 73 73</span></a>
+          <a class="meta-pill" href="mailto:contact@gwit.ci"><i class="fa fa-envelope"></i><span>contact@gwit.ci</span></a>
+        </div>
+        <div class="nav-lang-switch d-flex align-items-center gap-2 ms-lg-2" aria-label="Changement de langue">
+          <a class="lang-flag" href="index.html" lang="fr" hreflang="fr" aria-label="Version française" title="Version française">🇫🇷</a>
+          <a class="lang-flag" href="en/index.html" lang="en" hreflang="en" aria-label="English version" title="English version">🇬🇧</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <div class="main-page-wrapper">
+    <div id="loader-wrapper"><div id="loader"></div></div>
+    <main id="main" tabindex="-1">
+
+<header class="hero-premium hero-article-height hero-premium-slider" role="banner" data-hero-premium>
+  <div class="hero-premium-track">
+
+      <article class="hero-premium-slide is-active" data-hero-slide>
+        <img src="assets/images/previews/hero-benchmarking.jpg" alt="GWIT cover slide 1" loading="eager">
+        <div class="hero-overlay" role="region" aria-label="Banniere">
+          <div class="container">
+            <div class="hero-content">
+              <span class="hero-premium-kicker">Benchmarking QoS & Reglementation</span>
+              <h1>Piloter la Qualité Réseau Nationale</h1>
+              <p>Campagnes drive-tests multi-villes, scoring par technologie et restitution executive pour des décisions objectivables.</p>
+              
+              <div class="hero-premium-tags"><span>+180 campagnes QoS</span><span>12 500 sites analyses</span><span>Rapports regulator-ready</span></div>
+              <div class="cta-row">
+                <a href="services/benchmarking.html" class="btn btn-brand btn-lg">Lancer un benchmarking</a>
+                <a href="#case-studies" class="btn btn-outline-brand btn-lg">Voir les use cases QoS</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="hero-premium-slide" data-hero-slide>
+        <img src="assets/images/previews/hero-ingenierie.jpg" alt="GWIT cover slide 2" loading="eager">
+        <div class="hero-overlay" role="region" aria-label="Banniere">
+          <div class="container">
+            <div class="hero-content">
+              <span class="hero-premium-kicker">Ingénierie Télécom 2G-5G</span>
+              <h1>Accélérer la Capacité Sans Sur-Investir</h1>
+              <p>Master plan radio & transmission, optimisation RAN/SON et pilotage CAPEX-OPEX pour soutenir la croissance trafic.</p>
+              
+              <div class="hero-premium-tags"><span>Plan directeur 3-5 ans</span><span>Capacité 4G x2.8</span><span>Roadmap CAPEX/OPEX</span></div>
+              <div class="cta-row">
+                <a href="services/ingenierie-telecom.html" class="btn btn-brand btn-lg">Structurer le plan 5G</a>
+                <a href="#case-studies" class="btn btn-outline-brand btn-lg">Voir les cas ingénierie</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="hero-premium-slide" data-hero-slide>
+        <img src="assets/images/previews/hero-it.jpg" alt="GWIT cover slide 3" loading="eager">
+        <div class="hero-overlay" role="region" aria-label="Banniere">
+          <div class="container">
+            <div class="hero-content">
+              <span class="hero-premium-kicker">Opérations IT critiques</span>
+              <h1>Fiabiliser la continuité de service</h1>
+              <p>SOC/NOC, PRA/PCA et observabilité continue pour sécuriser les environnements télécom & IT sensibles.</p>
+              
+              <div class="hero-premium-tags"><span>SOC/NOC</span><span>PRA/PCA</span><span>Runbooks exploitables</span></div>
+              <div class="cta-row">
+                <a href="nos-services.html" class="btn btn-brand btn-lg">Voir nos services</a>
+                <a href="contact.html" class="btn btn-outline-brand btn-lg">Parler à un expert</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+  </div>
+  <div class="hero-premium-controls" aria-label="Navigation slider">
+    <button class="hero-premium-arrow prev" type="button" data-hero-prev aria-label="Slide precedente">&#8249;</button>
+    <div class="hero-premium-dots" role="tablist" aria-label="Selectionner un slide">
+      <button class="hero-premium-dot is-active" type="button" data-hero-dot="0" aria-label="Slide 1"></button><button class="hero-premium-dot" type="button" data-hero-dot="1" aria-label="Slide 2"></button><button class="hero-premium-dot" type="button" data-hero-dot="2" aria-label="Slide 3"></button>
+    </div>
+    <button class="hero-premium-arrow next" type="button" data-hero-next aria-label="Slide suivante">&#8250;</button>
+  </div>
+</header>
+
+
+<section class="feature-bar" aria-label="Chiffres cles GWIT">
+  <div class="feature-top">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-6 col-lg-3">
+          <article class="feature-item kpi-item">
+            <strong class="kpi-value">+25 ans</strong>
+            <p class="kpi-label">d'expérience télécom</p>
+          </article>
+        </div>
+        <div class="col-6 col-lg-3">
+          <article class="feature-item kpi-item">
+            <strong class="kpi-value">180+</strong>
+            <p class="kpi-label">campagnes QoS pilotees</p>
+          </article>
+        </div>
+        <div class="col-6 col-lg-3">
+          <article class="feature-item kpi-item">
+            <strong class="kpi-value">12 500</strong>
+            <p class="kpi-label">sites télécom analyses</p>
+          </article>
+        </div>
+        <div class="col-6 col-lg-3">
+          <article class="feature-item kpi-item">
+            <strong class="kpi-value">99.97%</strong>
+            <p class="kpi-label">disponibilité ciblée opérations IT</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="a_propos" class="section-premium" aria-label="À propos de GWIT">
+  <div class="container">
+    <div class="maridav-ci-title-one">
+      <h2>Qui sommes-nous ?</h2>
+    </div>
+    <div class="row g-3">
+      <div class="col-12 col-lg-10">
+        <div class="about-summary-card">
+          <p class="about-lead">GWIT est un acteur ivoirien d'exécution télécom et IT. Nous accompagnons opérateurs, régulateurs et entreprises avec des plans d'action mesurables et des livrables auditables, en combinant benchmarking, ingénierie, déploiement, sécurité IT et transfert de compétences terrain.</p>
+          <ul class="about-list">
+            <li><i class="bi bi-check2-circle" aria-hidden="true"></i> Programmes télécom 2G/3G/4G/5G et fibre</li>
+            <li><i class="bi bi-check2-circle" aria-hidden="true"></i> Gouvernance opérationnelle par KPI, SLA et quality gates</li>
+            <li><i class="bi bi-check2-circle" aria-hidden="true"></i> Support local, documentation complète et montée en compétence</li>
+          </ul>
+          <a href="a-propos.html" class="btn btn-outline-brand mt-2">En savoir plus</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-premium alt gwit-whyus" id="pourquoi-nous" aria-label="Pourquoi Nous">
+  <div class="container whyus-section-card">
+    <div class="maridav-ci-title-one text-center">
+      <h2>Pourquoi Nous ?</h2>
+    </div>
+    <div class="row g-4 features-container">
+      <div class="col-lg-4">
+        <div class="whyus-tabs nav flex-lg-column" id="whyUsTab" role="tablist" aria-orientation="vertical">
+          <button class="tab-item nav-link active" id="whyus-expertise-tab" data-bs-toggle="pill" data-bs-target="#whyus-expertise" type="button" role="tab" aria-controls="whyus-expertise" aria-selected="true">
+            <span class="tab-icon">🌍</span>
+            <span>Expertise Africaine & Locale</span>
+          </button>
+          <button class="tab-item nav-link" id="whyus-plateforme-tab" data-bs-toggle="pill" data-bs-target="#whyus-plateforme" type="button" role="tab" aria-controls="whyus-plateforme" aria-selected="false">
+            <span class="tab-icon">🔗</span>
+            <span>Plateforme Intégrée</span>
+          </button>
+          <button class="tab-item nav-link" id="whyus-leadership-tab" data-bs-toggle="pill" data-bs-target="#whyus-leadership" type="button" role="tab" aria-controls="whyus-leadership" aria-selected="false">
+            <span class="tab-icon">👥</span>
+            <span>Leadership Expérimenté</span>
+          </button>
+          <button class="tab-item nav-link" id="whyus-methodologie-tab" data-bs-toggle="pill" data-bs-target="#whyus-methodologie" type="button" role="tab" aria-controls="whyus-methodologie" aria-selected="false">
+            <span class="tab-icon">📊</span>
+            <span>Méthodologie Éprouvée</span>
+          </button>
+          <button class="tab-item nav-link" id="whyus-atouts-tab" data-bs-toggle="pill" data-bs-target="#whyus-atouts" type="button" role="tab" aria-controls="whyus-atouts" aria-selected="false">
+            <span class="tab-icon">⭐</span>
+            <span>Autres Atouts</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="tab-content whyus-content" id="whyUsTabContent">
+          <div class="content-panel tab-pane fade show active" id="whyus-expertise" role="tabpanel" aria-labelledby="whyus-expertise-tab">
+            <h3>Expertise africaine et locale</h3>
+            <p>Compétences universelles pour un univers télécom africain maîtrise.</p>
+            <ul class="feature-list">
+              <li>Société ivoirienne fondée par des ingénieurs avec +25 ans d'expérience</li>
+              <li>Acteurs majeurs des réseaux télécoms en Afrique de l'Ouest depuis 2000</li>
+              <li>Bonne maîtrise des régulateurs, opérateurs et défis du terrain</li>
+              <li>Veille technologique adaptee a la modernisation des opérateurs africains</li>
+            </ul>
+          </div>
+          <div class="content-panel tab-pane fade" id="whyus-plateforme" role="tabpanel" aria-labelledby="whyus-plateforme-tab">
+            <h3>Plateforme intégrée</h3>
+            <p>Une chaîne de valeur complète sans rupture, du diagnostic à l'exécution.</p>
+            <ul class="feature-list">
+              <li>Benchmarking -> Ingénierie -> Déploiement</li>
+              <li>Solutions IT -> Support & Formations</li>
+              <li>Résultats mieux alignés et délais raccourcis</li>
+              <li>ROI maximise sur les programmes prioritaires</li>
+            </ul>
+          </div>
+          <div class="content-panel tab-pane fade" id="whyus-leadership" role="tabpanel" aria-labelledby="whyus-leadership-tab">
+            <h3>Leadership expérimenté</h3>
+            <p>Une équipe dirigeante qui a piloté des transformations réseau de grande ampleur.</p>
+            <ul class="feature-list">
+              <li>Conception et pilotage de réseaux 2G -> 5G</li>
+              <li>Campagnes nationales QoS et SLA</li>
+              <li>Orchestration de rollouts majeurs multi-sites</li>
+              <li>Methodes terrain et monitoring orientés impact</li>
+            </ul>
+          </div>
+          <div class="content-panel tab-pane fade" id="whyus-methodologie" role="tabpanel" aria-labelledby="whyus-methodologie-tab">
+            <h3>Méthodologie éprouvée</h3>
+            <p>Exécution data-driven, agile et adaptee aux contextes africains.</p>
+            <ul class="feature-list">
+              <li>Campagnes QoS et audits multi-sites documentes</li>
+              <li>Disponibilite des services critiques suivie par KPI</li>
+              <li>Preuves, references et indicateurs partagés</li>
+              <li>Support manage et transfert de compétences</li>
+            </ul>
+          </div>
+          <div class="content-panel tab-pane fade" id="whyus-atouts" role="tabpanel" aria-labelledby="whyus-atouts-tab">
+            <h3>Autres atouts</h3>
+            <ul class="feature-list">
+              <li>Maîtrise des budgets et gouvernance des risques</li>
+              <li>Respect des délais contractuels</li>
+              <li>Assurance qualité des realisations</li>
+              <li>Transfert qualitatif de compétences</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="nos-services" class="services tm-services services-standalone" aria-label="Nos services GWIT">
+  <div class="container">
+    <div class="tm-section-inner">
+      <div class="maridav-ci-title-one text-center">
+        <h2>NOS SERVICES</h2>
+      </div>
+      <p class="section-subtitle text-center">Des missions terrain cadrées, avec livrables auditables et KPI de décision.</p>
+      <div class="row g-4 tm-services-grid">
+        <div class="col-md-6 col-lg-4">
+          <article class="service-card h-100">
+            <div class="service-media" style="background-image:url('assets/images/services/benchmarking.jpeg')"></div>
+            <div class="service-body">
+              <h3 class="service-title">Benchmarking & Intelligence QoS</h3>
+              <div class="service-proof">
+                <p class="service-proof-title">Livrables & KPI</p>
+                <ul class="service-proof-list">
+                  <li>Score QoS global & MOS par zone</li>
+                  <li>Rapports conformité SLA/ARTCI-ready</li>
+                  <li>Plan d'actions priorise</li>
+                </ul>
+              </div>
+              <div class="service-footer">
+                <a class="service-card-cta service-cta-orange" href="services/benchmarking.html">VOIR SERVICES →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="service-card h-100">
+            <div class="service-media" style="background-image:url('assets/images/services/ingenierie-telecoms.jpg')"></div>
+            <div class="service-body">
+              <h3 class="service-title">Ingénierie Télécoms 360</h3>
+              <div class="service-proof">
+                <p class="service-proof-title">Livrables & KPI</p>
+                <ul class="service-proof-list">
+                  <li>HLD/LLD radio + budgets CAPEX/OPEX</li>
+                  <li>KPI couverture/capacité par zone</li>
+                  <li>Backhaul dimensionne MW/FO</li>
+                </ul>
+              </div>
+              <div class="service-footer">
+                <a class="service-card-cta service-cta-orange" href="services/ingenierie-telecom.html">VOIR SERVICES →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="service-card h-100">
+            <div class="service-media" style="background-image:url('assets/images/services/deploiement-et-installation-telecoms.jpg')"></div>
+            <div class="service-body">
+              <h3 class="service-title">Déploiement & Installations Télécom</h3>
+              <div class="service-proof">
+                <p class="service-proof-title">Livrables & KPI</p>
+                <ul class="service-proof-list">
+                  <li>Dossiers as-built & PV d'acceptance</li>
+                  <li>Taux de sites livres dans les délais</li>
+                  <li>Non-conformités corrigées J+7</li>
+                </ul>
+              </div>
+              <div class="service-footer">
+                <a class="service-card-cta service-cta-orange" href="services/installations-telecom.html">VOIR SERVICES →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="service-card h-100">
+            <div class="service-media" style="background-image:url('assets/images/services/solutions-informatiques.avif')"></div>
+            <div class="service-body">
+              <h3 class="service-title">Solutions Informatiques & Virtualisation</h3>
+              <div class="service-proof">
+                <p class="service-proof-title">Livrables & KPI</p>
+                <ul class="service-proof-list">
+                  <li>Blueprint LAN/WAN & segmentation</li>
+                  <li>RTO/RPO & runbooks d'exploitation</li>
+                  <li>Plan de remédiation sécurité</li>
+                </ul>
+              </div>
+              <div class="service-footer">
+                <a class="service-card-cta service-cta-orange" href="services/solutions-it.html">VOIR SERVICES →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="service-card h-100">
+            <div class="service-media" style="background-image:url('assets/images/services/support-professionnel-formations.png')"></div>
+            <div class="service-body">
+              <h3 class="service-title">Support Professionnel & Formations</h3>
+              <div class="service-proof">
+                <p class="service-proof-title">Livrables & KPI</p>
+                <ul class="service-proof-list">
+                  <li>Plan de montée en compétences</li>
+                  <li>Taux de certification & process</li>
+                  <li>Resolution incidents post-formation</li>
+                </ul>
+              </div>
+              <div class="service-footer">
+                <a class="service-card-cta" href="services/conseil-formation.html">Voir Programme →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="service-card h-100 service-card-pdf">
+            <div class="service-media service-media-pdf">
+              <div class="pdf-preview-frame">
+                <object class="pdf-preview" data="GWIT_Doc_Presentation_v11_A4.pdf#page=1&view=FitH&toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" aria-label="Presentation GWIT">
+                  <img class="pdf-fallback" src="assets/images/logos/gwit-1.jpeg" alt="Presentation GWIT">
+                </object>
+              </div>
+              <span class="pdf-badge">PDF</span>
+            </div>
+            <div class="service-body">
+              <span class="service-badge badge-strategic">Catalogue GWIT</span>
+              <div class="service-proof">
+                <p class="service-proof-title">Catalogue complet</p>
+                <ul class="service-proof-list">
+                  <li>Services, perimetres et livrables</li>
+                  <li>Cas d'usage, KPI et SLA</li>
+                  <li>References et methodes GWIT</li>
+                </ul>
+              </div>
+              <div class="service-footer">
+                <a class="service-card-cta" href="GWIT_Doc_Presentation_v11_A4.pdf" download>Télécharger PDF →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="partners" id="partners" aria-label="Ils nous font confiance">
+  <div class="container">
+    <div class="section-header text-center">
+      <p class="section-subtitle">Partenaires & Clients</p>
+      <h2 class="section-title">Ils nous font confiance</h2>
+    </div>
+    <div class="partners-carousel" data-carousel="partners">
+      <button class="partners-nav prev" type="button" aria-label="Logo precedent">&#8249;</button>
+      <div class="partners-track">
+        <article class="partner-card" aria-label="Orange Côte d'Ivoire"><div class="partner-logo"><img src="assets/images/partners/orange-ci.svg" alt="Orange Côte d'Ivoire"></div></article>
+        <article class="partner-card" aria-label="MTN Côte d'Ivoire"><div class="partner-logo"><img src="assets/images/partners/mtn-ci.svg" alt="MTN Côte d'Ivoire"></div></article>
+        <article class="partner-card" aria-label="ARTCI"><div class="partner-logo"><img src="assets/images/partners/artci.png" alt="ARTCI"></div></article>
+        <article class="partner-card" aria-label="IGTSD"><div class="partner-logo"><img src="assets/images/partners/igtsd-partner.png" alt="IGTSD"></div></article>
+        <article class="partner-card" aria-label="Midwex"><div class="partner-logo"><img src="assets/images/partners/midwex-partner.png" alt="Midwex"></div></article>
+        <article class="partner-card" aria-label="EIS"><div class="partner-logo"><img src="assets/images/partners/eis-partner.png" alt="EIS"></div></article>
+        <article class="partner-card" aria-label="Keysight"><div class="partner-logo"><img src="assets/images/partners/keyside-partner.png" alt="Keysight"></div></article>
+        <article class="partner-card" aria-label="Nuran Wireless"><div class="partner-logo"><img src="assets/images/partners/nuran-wireless-partner.png" alt="Nuran Wireless"></div></article>
+        <article class="partner-card" aria-label="SETG"><div class="partner-logo"><img src="assets/images/partners/setg-partner.png" alt="SETG"></div></article>
+      </div>
+      <button class="partners-nav next" type="button" aria-label="Logo suivant">&#8250;</button>
+    </div>
+    <div class="partners-progress" aria-hidden="true"><span class="partners-progress-bar"></span></div>
+  </div>
+</section>
+
+<section class="case-studies gwit-case-studies" id="case-studies" aria-label="Etudes de cas">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <p class="section-subtitle">Cas de succès</p>
+      <h2 class="section-title">Résultats mesurables pour nos clients</h2>
+      <p class="section-subtitle alt">Des opérateurs africains ont transformé leur performance grâce à nos solutions intégrées.</p>
+    </div>
+    <div class="case-study-filters" role="tablist" aria-label="Filtrer les études de cas">
+      <button class="case-filter-btn active" type="button" data-case-filter="all" aria-pressed="true">Tous</button>
+      <button class="case-filter-btn" type="button" data-case-filter="benchmarking" aria-pressed="false">Benchmarking QoS</button>
+      <button class="case-filter-btn" type="button" data-case-filter="engineering" aria-pressed="false">Ingénierie Télécom</button>
+      <button class="case-filter-btn" type="button" data-case-filter="deployment" aria-pressed="false">Déploiement</button>
+      <button class="case-filter-btn" type="button" data-case-filter="it-cyber" aria-pressed="false">IT & SÉCURITÉ</button>
+      <button class="case-filter-btn" type="button" data-case-filter="advisory" aria-pressed="false">Conseil & Formation</button>
+    </div>
+    <div class="case-studies-grid">
+      <article class="case-study-card" data-category="benchmarking" data-featured="true">
+        <div class="case-study-media" style="background-image:url('assets/images/previews/hero-benchmarking.jpg');"></div>
+        <div class="case-study-body">
+          <div class="case-study-badge">Benchmarking QoS</div>
+          <h3>Amélioration de la QoS multi-opérateurs</h3>
+          <p class="case-study-client"><strong>Client :</strong> Régulateur africain (ARTCI équivalent)</p>
+          <p class="case-study-summary">Score QoS national et conformité SLA basés sur des campagnes drive-tests multi-villes.</p>
+          <ul class="case-study-highlights">
+            <li>Score QoS par zone et par techno</li>
+            <li>Rapports ARTCI-ready</li>
+          </ul>
+          <div class="case-study-details">
+            <div class="case-study-challenge">
+              <h4>Défi</h4>
+              <p>Impossibilité de mesurer la qualité de service réelle des opérateurs mobiles et absence de benchmarking régulateur.</p>
+            </div>
+            <div class="case-study-solution">
+              <h4>Solution GWIT</h4>
+              <p>Campagnes drive-tests certifiées, dashboards exécutifs et rapports réglementaires par opérateur et technologie.</p>
+            </div>
+            <div class="case-study-impact">
+              <h4>Impact</h4>
+              <ul>
+                <li><strong>+45%</strong> de transparence QoS</li>
+                <li><strong>90 jours</strong> pour déployer un benchmarking national</li>
+                <li><strong>CAPEX optimisé</strong> sur base de mesures terrain</li>
+                <li><strong>SLA amélioré</strong> avec pilotage factuel</li>
+              </ul>
+            </div>
+          </div>
+          <div class="case-study-actions">
+            <a class="case-study-cta case-study-cta--more" href="#case-studies" data-case-open="benchmarking">Lire l'étude complète →</a>
+            <a href="#contact" class="case-study-cta case-study-cta-primary">Demander une étude de cas →</a>
+          </div>
+        </div>
+      </article>
+      <article class="case-study-card" data-category="engineering" data-featured="true">
+        <div class="case-study-media" style="background-image:url('assets/images/previews/hero-infra.jpg');"></div>
+        <div class="case-study-body">
+          <div class="case-study-badge">Ingénierie Télécom</div>
+          <h3>Modernisation 2G vers 5G accélérée</h3>
+          <p class="case-study-client"><strong>Client :</strong> Opérateur mobile régional</p>
+          <p class="case-study-summary">Master plan 3-5 ans, KPIs couverture/capacité et optimisation SON pour accélérer la bascule 5G.</p>
+          <ul class="case-study-highlights">
+            <li>HLD/LLD radio et backhaul</li>
+            <li>Roadmap CAPEX/OPEX</li>
+          </ul>
+          <div class="case-study-details">
+            <div class="case-study-challenge">
+              <h4>Défi</h4>
+              <p>Réseau hérité 2G/3G fragile, absence de master plan 4G/5G et CAPEX mal optimisé.</p>
+            </div>
+            <div class="case-study-solution">
+              <h4>Solution GWIT</h4>
+              <p>Master plan coverage/capacity, optimisation SON, planning transmission et coaching des équipes RNO.</p>
+            </div>
+            <div class="case-study-impact">
+              <h4>Impact</h4>
+              <ul>
+                <li><strong>Délais compresses</strong> sur l'ingénierie</li>
+                <li><strong>CAPEX reduit</strong> via optimisation fréquences</li>
+                <li><strong>Capacité 4G accrue</strong> sans surdimensionnement</li>
+                <li><strong>Équipes autonomes</strong> et certifiées</li>
+              </ul>
+            </div>
+          </div>
+          <div class="case-study-actions">
+            <a class="case-study-cta case-study-cta--more" href="#case-studies" data-case-open="engineering">Lire l'étude complète →</a>
+            <a href="#contact" class="case-study-cta case-study-cta-primary">Planifier une presentation →</a>
+          </div>
+        </div>
+      </article>
+      <article class="case-study-card" data-category="deployment" data-featured="true">
+        <div class="case-study-media" style="background-image:url('assets/images/previews/deux-pylones-ciel-cyan.jpg');"></div>
+        <div class="case-study-body">
+          <div class="case-study-badge">Déploiement & Installations</div>
+          <h3>Rollout multi-sites sécurisé et conforme</h3>
+          <p class="case-study-client"><strong>Client :</strong> TowerCo et opérateur national</p>
+          <p class="case-study-summary">Dossiers as-built, acceptance multi-opérateurs et contrôle HSE intégrés à chaque étape.</p>
+          <ul class="case-study-highlights">
+            <li>PV d'acceptance standardisés</li>
+            <li>Quality gates multi-niveaux</li>
+          </ul>
+          <div class="case-study-details">
+            <div class="case-study-challenge">
+              <h4>Défi</h4>
+              <p>Accélérer la mise en service tout en respectant HSE, budgets et standards d'acceptance multi-opérateurs.</p>
+            </div>
+            <div class="case-study-solution">
+              <h4>Solution GWIT</h4>
+              <p>Quality gates, supervision terrain, dossiers as-built et PV d'acceptance centralisés.</p>
+            </div>
+            <div class="case-study-impact">
+              <h4>Impact</h4>
+              <ul>
+                <li><strong>+32%</strong> de sites livres dans les délais</li>
+                <li><strong>0 incident HSE</strong> sur phase critique</li>
+                <li><strong>Traçabilité complète</strong> des équipements</li>
+                <li><strong>SSV standardise</strong> par opérateur</li>
+              </ul>
+            </div>
+          </div>
+          <div class="case-study-actions">
+            <a class="case-study-cta case-study-cta--more" href="#case-studies" data-case-open="deployment">Lire l'étude complète →</a>
+            <a href="#contact" class="case-study-cta case-study-cta-primary">Planifier un rollout →</a>
+          </div>
+        </div>
+      </article>
+      <article class="case-study-card" data-category="it-cyber">
+        <div class="case-study-media" style="background-image:url('assets/images/previews/hero-it.jpg');"></div>
+        <div class="case-study-body">
+          <div class="case-study-badge">Solutions IT & SÉCURITÉ</div>
+          <h3>Infrastructure IT résiliente et sécurisée</h3>
+          <p class="case-study-client"><strong>Client :</strong> Enterprise tech africain</p>
+          <p class="case-study-summary">SOC 24/7, PRA/PCA et runbooks d'exploitation pour une continuité IT mesurable.</p>
+          <ul class="case-study-highlights">
+            <li>RTO/RPO contractuels</li>
+            <li>Plan de remédiation sécurité</li>
+          </ul>
+          <div class="case-study-details">
+            <div class="case-study-challenge">
+              <h4>Défi</h4>
+              <p>Infrastructure IT fragile, zero PRA/PCA, risques cyber eleves et applications critiques sans backup.</p>
+            </div>
+            <div class="case-study-solution">
+              <h4>Solution GWIT</h4>
+              <p>Architecture résiliente, clusters virtualisation, SOC 24/7, PRA/PCA automatise et observabilité.</p>
+            </div>
+            <div class="case-study-impact">
+              <h4>Impact</h4>
+              <ul>
+                <li><strong>99.97%</strong> de disponibilité</li>
+                <li><strong>RTO reduit</strong> pour basculement de site</li>
+                <li><strong>Incidents cyber maîtrisés</strong> post-déploiement</li>
+                <li><strong>Economies operationnelles IT</strong> durables</li>
+              </ul>
+            </div>
+          </div>
+          <div class="case-study-actions">
+            <a class="case-study-cta case-study-cta--more" href="#case-studies" data-case-open="it-cyber">Lire l'étude complète →</a>
+            <a href="#contact" class="case-study-cta case-study-cta-primary">Demander un audit →</a>
+          </div>
+        </div>
+      </article>
+      <article class="case-study-card" data-category="advisory">
+        <div class="case-study-media" style="background-image:url('assets/images/previews/formation-gwit.jpg');"></div>
+        <div class="case-study-body">
+          <div class="case-study-badge">Conseil & Formations</div>
+          <h3>Acceleration des compétences et gouvernance</h3>
+          <p class="case-study-client"><strong>Client :</strong> Opérateur et régulateur</p>
+          <p class="case-study-summary">Programmes 2G vers 5G, IT et SÉCURITÉ avec mesure d'adoption et coaching exécutif.</p>
+          <ul class="case-study-highlights">
+            <li>Taux de certification suivi</li>
+            <li>Processus alignes</li>
+          </ul>
+          <div class="case-study-details">
+            <div class="case-study-challenge">
+              <h4>Défi</h4>
+              <p>Renforcer les compétences et structurer des processus communs entre directions techniques et régulation.</p>
+            </div>
+            <div class="case-study-solution">
+              <h4>Solution GWIT</h4>
+              <p>Programmes modulaires, coaching exécutif et kits d'adoption operationnels.</p>
+            </div>
+            <div class="case-study-impact">
+              <h4>Impact</h4>
+              <ul>
+                <li><strong>+60%</strong> d'équipes certifiées</li>
+                <li><strong>Processus homogenises</strong> entre acteurs</li>
+                <li><strong>Resolution plus rapide</strong> des incidents</li>
+              </ul>
+            </div>
+          </div>
+          <div class="case-study-actions">
+            <a class="case-study-cta case-study-cta--more" href="#case-studies" data-case-open="advisory">Lire l'étude complète →</a>
+            <a href="#contact" class="case-study-cta case-study-cta-primary">Demander un programme →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section-premium gwit-blog-preview" id="blog-preview" aria-label="Apercu blog GWIT">
+  <div class="container">
+    <div class="maridav-ci-title-one text-center"><h2>Dernieres lectures du radar GWIT</h2></div>
+    <p class="text-center text-muted mb-4">Briefs premium, benchmarks et playbooks pour garder une longueur d'avance.</p>
+    <div class="row g-4">
+      <div class="col-12 col-md-4">
+        <div class="card card-premium blog-card h-100">
+          <img src="assets/images/previews/hero-benchmarking.jpg" class="card-img-top" alt="Analyse benchmarking QoS">
+          <div class="card-body d-flex flex-column">
+            <span class="blog-tag">Benchmarking & QoS</span>
+            <h3 class="h6 text-brand">QoS 5G: gouverner une campagne nationale</h3>
+            <p class="small flex-grow-1">Retour d'expérience sur les drive-tests multi-opérateurs, du design de route a la restitution ARTCI-ready.</p>
+            <a href="gwit-blog-telecom-it-analyses.html" class="btn btn-outline-brand btn-sm mt-2">Lire l'article</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card card-premium blog-card h-100">
+          <img src="assets/images/previews/hero-integration.avif" class="card-img-top" alt="Guide integration réseau">
+          <div class="card-body d-flex flex-column">
+            <span class="blog-tag">Ingénierie & Déploiement</span>
+            <h3 class="h6 text-brand">Plan directeur 2G vers 5G: méthodologie GWIT</h3>
+            <p class="small flex-grow-1">Comment calibrer couverture, capacité, énergie et backhaul pour soutenir les ambitions de trafic.</p>
+            <a href="gwit-blog-telecom-it-analyses.html" class="btn btn-outline-brand btn-sm mt-2">Lire l'article</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card card-premium blog-card h-100">
+          <img src="assets/images/previews/hero-it.jpg" class="card-img-top" alt="Architecture SOC">
+          <div class="card-body d-flex flex-column">
+            <span class="blog-tag">IT & Sécurité</span>
+            <h3 class="h6 text-brand">Architecture SOC pour opérateurs africains</h3>
+            <p class="small flex-grow-1">Déployer un SOC convergé couvrant le cœur de réseau, datacenters et produits digitaux.</p>
+            <a href="gwit-blog-telecom-it-analyses.html" class="btn btn-outline-brand btn-sm mt-2">Lire l'article</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4"><a href="gwit-blog-telecom-it-analyses.html" class="btn btn-brand">Accéder aux ressources GWIT</a></div>
+  </div>
+</section>
+
+<div class="section-spacing parallax" id="lead">
+  <section class="section-premium" aria-label="Demander un pre-cadrage">
+    <div class="container">
+      <div class="maridav-ci-title-one text-center"><h2>Besoin de discuter d'une urgence réseau ou IT ?</h2></div>
+      <div class="row g-3">
+        <div class="col-12 col-lg-8">
+          <div class="card card-premium quote-form">
+            <div class="form-top p-3"><strong>Remplissez ce formulaire et un expert GWIT vous rappelle sous 24h</strong></div>
+            <div class="p-3">
+              <form id="form-pro" novalidate>
+                <div class="row g-2">
+                  <div class="col-md-6"><label class="form-label">Organisation</label><input class="form-control" required></div>
+                  <div class="col-md-6"><label class="form-label">Nom et prénom</label><input class="form-control" required></div>
+                  <div class="col-md-6"><label class="form-label">Fonction</label><input class="form-control" required></div>
+                  <div class="col-md-6"><label class="form-label">Téléphone</label><input class="form-control" required></div>
+                  <div class="col-md-6"><label class="form-label">Email</label><input type="email" class="form-control" required></div>
+                  <div class="col-md-6"><label class="form-label">Service concerne</label><select class="form-select" required><option value="">Choisir...</option><option>Benchmarking QoS</option><option>Ingénierie Télécom</option><option>Déploiement</option><option>Solutions IT</option><option>Support & Formation</option></select></div>
+                  <div class="col-12"><label class="form-label">Contexte et priorité</label><textarea class="form-control" rows="4" required></textarea></div>
+                  <div class="col-12"><button class="btn btn-brand" type="submit">Envoyer la demande</button></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="card card-premium h-100 contact-premium-card">
+            <div class="card-body">
+              <div class="contact-premium-head">
+                <span class="contact-premium-kicker">Contact express</span>
+              </div>
+              <div class="contact-premium-grid">
+                <a class="contact-premium-item contact-premium-item-phones" href="tel:+2250700077373">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span class="contact-premium-label">Téléphone</span>
+                  <strong><span class="contact-phone-number"><span class="contact-country-code">(+225)</span> 07 00 07 73 73</span><span class="contact-phone-sep" aria-hidden="true">●</span><span class="contact-phone-number">05 48 07 73 73</span></strong>
+                </a>
+                <a class="contact-premium-item" href="mailto:contact@gwit.ci">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span class="contact-premium-label">Email</span>
+                  <strong>contact@gwit.ci</strong>
+                </a>
+                <div class="contact-premium-item contact-premium-item-address">
+                  <i class="fa fa-map-marker-alt" aria-hidden="true"></i>
+                  <span class="contact-premium-label">Adresse</span>
+                  <strong>Cocody Angre - Djorogobite, Abidjan</strong>
+                </div>
+              </div>
+              <div class="geo-map-badge"><i class="fa fa-map-marker-alt" aria-hidden="true"></i><span>Géolocalisation du siège</span></div>
+              <div class="geo-map-wrapper" id="siege-geolocalisation">
+                <iframe title="Localisation du siege Global Wireless Integrated Technologies" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d496.5276276015489!2d-3.919799686606979!3d5.383241158299603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc19300363b954d%3A0xd7aa03d06e778dab!2sIvoire%20Global%20Télécom%20Service%20%26%20Distribution%20(IGTSD)!5e0!3m2!1sfr!2sci!4v1772997315770!5m2!1sfr!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</main>
+    
+<footer class="footer-premium" role="contentinfo">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-lg-4">
+          <div class="brand">
+            <img src="assets/images/logos/gwit-1.jpeg" alt="GWIT">
+            <span>GWIT<small>Time To Act, Time To Do Better</small></span>
+          </div>
+          <p class="mt-3 small">Global Wireless Integrated Technologies accompagne opérateurs, régulateurs, TowersCo, équipementiers  et entreprises avec des livrables télécom et IT actionnables.</p>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h6>Services</h6>
+          <ul class="list-unstyled m-0">
+            <li><a class="small-link" href="services/benchmarking.html">Benchmarking QoS</a></li>
+            <li><a class="small-link" href="services/ingenierie-telecom.html">Ingénierie Télécom</a></li>
+            <li><a class="small-link" href="services/installations-telecom.html">Déploiement</a></li>
+            <li><a class="small-link" href="services/solutions-it.html">Solutions IT</a></li>
+            <li><a class="small-link" href="services/conseil-formation.html">Support & Formation</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6>Ressources</h6>
+          <ul class="list-unstyled m-0">
+            <li><a class="small-link" href="gwit-blog-telecom-it-analyses.html">Analyses & Briefings</a></li>
+            <li><a class="small-link" href="index.html#case-studies">Use Cases</a></li>
+            <li><a class="small-link" href="nos-services.html">Nos Services</a></li>
+            <li><a class="small-link" href="a-propos.html">À propos</a></li>
+            <li><a class="small-link" href="GWIT_Doc_Presentation_v11_A4.pdf" download>Plaquette PDF</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3">
+          <h6>Contact</h6>
+          <div class="d-flex flex-column gap-2">
+            <a class="small-link" href="mailto:contact@gwit.ci"><i class="fa fa-envelope"></i> contact@gwit.ci</a>
+            <a class="small-link" href="tel:+2250700077373"><i class="fa fa-phone"></i> +225 07 00 07 73 73</a>
+            <a class="small-link" href="tel:+2250548077373"><i class="fa fa-phone"></i> 05 48 07 73 73</a>
+            <a class="small-link" href="contact.html"><i class="fa fa-comments"></i> Demander un briefing</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-2">
+      <p class="mb-0 small">© 2026 GWIT - Tous droits réservés.</p>
+      <p class="mb-0 small">Exécution télécom & IT pour l'Afrique.</p>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <button class="scroll-top tran3s" aria-label="Retour en haut"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.min.js?v=20260303r1" defer></script>
+  <script src="assets/js/template01-gwit.js?v=20260303r1" defer></script>
+  <script src="assets/js/site-crm-bridge.js?v=20260303r1" defer></script>
+</body>
+</html>

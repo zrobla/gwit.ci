@@ -1,0 +1,13 @@
+client:
+  name: "GWIT"
+  legal_name: "Global Wireless Integrated Technologies"
+  primary_domain: "www.gwit.ci"
+  sector_pack: "services_b2b"
+  website_template: "template_01"
+  locale_default: "fr"
+  locale_secondary:
+    - "en"
+project:
+  source_repo_path: "/home/kayz/Documents/GitRepo/gwit-copycopy"
+  delivery_folder: "/home/kayz/Documents/GitRepo/gwit-copycopy/Waas"
+  notes: "Template rebuilt from existing GWIT static website content"

@@ -1,0 +1,16 @@
+{
+  "sector_pack": "services_b2b",
+  "target_client": "GWIT",
+  "content_profile": {
+    "website_type": "corporate services",
+    "focus_areas": [
+      "telecom benchmarking",
+      "telecom engineering",
+      "deployment and installations",
+      "it solutions",
+      "advisory and training"
+    ],
+    "locales": ["fr", "en"]
+  },
+  "delivery_mode": "static_template_payload"
+}
