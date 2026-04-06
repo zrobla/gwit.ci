@@ -277,7 +277,20 @@ body.premium-active{padding-top:var(--gwit-header-offset)}
 .gwit-whyus .whyus-section-card.is-revealed .whyus-tabs .tab-item:nth-child(4) .tab-icon{animation-delay:.66s}
 .gwit-whyus .whyus-section-card.is-revealed .whyus-tabs .tab-item:nth-child(5) .tab-icon{animation-delay:.78s}
 @keyframes gwitWhyusIconPulse{0%{transform:scale(1)}45%{transform:scale(1.22)}100%{transform:scale(1)}}
-@media (prefers-reduced-motion:reduce){.gwit-whyus .whyus-section-card.is-revealed .whyus-tabs .tab-item .tab-icon{animation:none}}
+@media (min-width:992px){
+  .gwit-whyus .whyus-tabs .tab-item{position:relative;overflow:hidden;isolation:isolate}
+  .gwit-whyus .whyus-tabs .tab-item > *{position:relative;z-index:1}
+  .gwit-whyus .whyus-tabs .tab-item:not(.tab-explored):not(.active)::before{content:'';position:absolute;inset:0;background:linear-gradient(110deg,transparent 25%,rgba(56,132,255,.32) 50%,transparent 75%);background-size:220% 100%;animation:gwitTabShimmer 3.2s ease-in-out infinite;pointer-events:none;z-index:0;border-radius:inherit}
+  .gwit-whyus .whyus-tabs .tab-item:not(.tab-explored):not(.active):nth-child(2)::before{animation-delay:.65s}
+  .gwit-whyus .whyus-tabs .tab-item:not(.tab-explored):not(.active):nth-child(3)::before{animation-delay:1.30s}
+  .gwit-whyus .whyus-tabs .tab-item:not(.tab-explored):not(.active):nth-child(4)::before{animation-delay:1.95s}
+  .gwit-whyus .whyus-tabs .tab-item:not(.tab-explored):not(.active):nth-child(5)::before{animation-delay:2.60s}
+}
+@keyframes gwitTabShimmer{0%{background-position:-110% 0}55%{background-position:210% 0}100%{background-position:210% 0}}
+@media (prefers-reduced-motion:reduce){
+  .gwit-whyus .whyus-section-card.is-revealed .whyus-tabs .tab-item .tab-icon{animation:none}
+  .gwit-whyus .whyus-tabs .tab-item::before{animation:none;display:none}
+}
 .services#nos-services:before,.services#nos-services:after{content:none!important;display:none!important}
 #nos-services .container{background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important}
 #nos-services .container:before{content:none!important;display:none!important}

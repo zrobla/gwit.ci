@@ -532,6 +532,18 @@
   }
 
   /* ============================
+     WHYUS TAB EXPLORATION TRACKING
+     Marks tabs as "explored" once clicked so the shimmer hint can stop
+     ============================ */
+  var whyusTabs=document.querySelectorAll('.gwit-whyus .whyus-tabs .tab-item');
+  if(whyusTabs.length){
+    whyusTabs.forEach(function(tab){
+      if(tab.classList.contains('active')) tab.classList.add('tab-explored');
+      tab.addEventListener('click',function(){tab.classList.add('tab-explored');});
+    });
+  }
+
+  /* ============================
      ANIMATED KPI COUNTERS
      ============================ */
   var kpiElements=document.querySelectorAll('[data-count]');
