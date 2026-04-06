@@ -1,26 +1,257 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.gwit.ci/</loc></url>
-  <url><loc>https://www.gwit.ci/a-propos.html</loc></url>
-  <url><loc>https://www.gwit.ci/nos-services.html</loc></url>
-  <url><loc>https://www.gwit.ci/gwit-blog-telecom-it-analyses.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.gwit.ci/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/a-propos.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/a-propos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/a-propos.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/nos-services.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/nos-services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/nos-services.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/contact.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/gwit-blog-telecom-it-analyses.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/gwit-blog-telecom-it-analyses.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/gwit-blog-telecom-it-analyses.html"/>
+  </url>
   <url><loc>https://www.gwit.ci/briefings-telecoms.html</loc></url>
-  <url><loc>https://www.gwit.ci/contact.html</loc></url>
-  <url><loc>https://www.gwit.ci/services/benchmarking.html</loc></url>
-  <url><loc>https://www.gwit.ci/services/ingenierie-telecom.html</loc></url>
-  <url><loc>https://www.gwit.ci/services/installations-telecom.html</loc></url>
-  <url><loc>https://www.gwit.ci/services/solutions-it.html</loc></url>
-  <url><loc>https://www.gwit.ci/services/conseil-formation.html</loc></url>
-  <url><loc>https://www.gwit.ci/analyse-campagne-qos-5g.html</loc></url>
-  <url><loc>https://www.gwit.ci/analyse-data-storytelling-comites.html</loc></url>
-  <url><loc>https://www.gwit.ci/analyse-supervision-soc-noc.html</loc></url>
-  <url><loc>https://www.gwit.ci/blog-automatiser-exploitation-it.html</loc></url>
-  <url><loc>https://www.gwit.ci/blog-coacher-equipes-noc-rno.html</loc></url>
-  <url><loc>https://www.gwit.ci/blog-data-storytelling-comex.html</loc></url>
-  <url><loc>https://www.gwit.ci/blog-ingenierie-verte-sobriete-energetique.html</loc></url>
-  <url><loc>https://www.gwit.ci/blog-plan-directeur-2g-5g.html</loc></url>
-  <url><loc>https://www.gwit.ci/blog-programmes-alliances-gwit.html</loc></url>
-  <url><loc>https://www.gwit.ci/blog-qos-5g.html</loc></url>
-  <url><loc>https://www.gwit.ci/blog-soc-operateurs-africains.html</loc></url>
-  <url><loc>https://www.gwit.ci/en/index.html</loc></url>
+  <url>
+    <loc>https://www.gwit.ci/services/benchmarking.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/services/benchmarking.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/services/benchmarking.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/services/benchmarking.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/services/ingenierie-telecom.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/services/ingenierie-telecom.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/services/telecom-engineering.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/services/ingenierie-telecom.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/services/installations-telecom.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/services/installations-telecom.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/services/deployment-installations.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/services/installations-telecom.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/services/solutions-it.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/services/solutions-it.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/services/it-solutions.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/services/solutions-it.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/services/conseil-formation.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/services/conseil-formation.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/services/advisory-training.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/services/conseil-formation.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/analyse-campagne-qos-5g.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/analyse-campagne-qos-5g.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/analysis-5g-qos-campaign.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/analyse-campagne-qos-5g.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/analyse-data-storytelling-comites.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/analyse-data-storytelling-comites.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/analysis-data-storytelling-committees.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/analyse-data-storytelling-comites.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/analyse-supervision-soc-noc.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/analyse-supervision-soc-noc.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/analysis-soc-noc-supervision.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/analyse-supervision-soc-noc.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/blog-automatiser-exploitation-it.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/blog-automatiser-exploitation-it.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/blog-automating-it-operations.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/blog-automatiser-exploitation-it.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/blog-coacher-equipes-noc-rno.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/blog-coacher-equipes-noc-rno.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/blog-coaching-noc-rno-teams.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/blog-coacher-equipes-noc-rno.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/blog-data-storytelling-comex.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/blog-data-storytelling-comex.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/blog-data-storytelling-exec.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/blog-data-storytelling-comex.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/blog-ingenierie-verte-sobriete-energetique.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/blog-ingenierie-verte-sobriete-energetique.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/blog-green-engineering.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/blog-ingenierie-verte-sobriete-energetique.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/blog-plan-directeur-2g-5g.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/blog-plan-directeur-2g-5g.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/blog-2g-5g-master-plan.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/blog-plan-directeur-2g-5g.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/blog-programmes-alliances-gwit.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/blog-programmes-alliances-gwit.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/blog-programs-alliances.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/blog-programmes-alliances-gwit.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/blog-qos-5g.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/blog-qos-5g.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/blog-5g-qos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/blog-qos-5g.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/blog-soc-operateurs-africains.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/blog-soc-operateurs-africains.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/blog-soc-african-operators.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/blog-soc-operateurs-africains.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/en/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/en/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/a-propos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/a-propos.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/en/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/nos-services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/nos-services.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/contact.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/en/services/benchmarking.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/services/benchmarking.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/services/benchmarking.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/services/benchmarking.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/en/services/telecom-engineering.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/services/ingenierie-telecom.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/services/telecom-engineering.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/services/ingenierie-telecom.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/en/services/deployment-installations.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/services/installations-telecom.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/services/deployment-installations.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/services/installations-telecom.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/en/services/it-solutions.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/services/solutions-it.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/services/it-solutions.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/services/solutions-it.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/en/services/advisory-training.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/services/conseil-formation.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/services/advisory-training.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/services/conseil-formation.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/en/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/gwit-blog-telecom-it-analyses.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/gwit-blog-telecom-it-analyses.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/en/analysis-5g-qos-campaign.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/analyse-campagne-qos-5g.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/analysis-5g-qos-campaign.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/analyse-campagne-qos-5g.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/en/analysis-soc-noc-supervision.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/analyse-supervision-soc-noc.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/analysis-soc-noc-supervision.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/analyse-supervision-soc-noc.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/en/analysis-data-storytelling-committees.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/analyse-data-storytelling-comites.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/analysis-data-storytelling-committees.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/analyse-data-storytelling-comites.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/en/blog-5g-qos.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/blog-qos-5g.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/blog-5g-qos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/blog-qos-5g.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/en/blog-2g-5g-master-plan.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/blog-plan-directeur-2g-5g.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/blog-2g-5g-master-plan.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/blog-plan-directeur-2g-5g.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/en/blog-soc-african-operators.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/blog-soc-operateurs-africains.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/blog-soc-african-operators.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/blog-soc-operateurs-africains.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/en/blog-coaching-noc-rno-teams.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/blog-coacher-equipes-noc-rno.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/blog-coaching-noc-rno-teams.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/blog-coacher-equipes-noc-rno.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/en/blog-green-engineering.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/blog-ingenierie-verte-sobriete-energetique.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/blog-green-engineering.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/blog-ingenierie-verte-sobriete-energetique.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/en/blog-data-storytelling-exec.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/blog-data-storytelling-comex.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/blog-data-storytelling-exec.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/blog-data-storytelling-comex.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/en/blog-automating-it-operations.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/blog-automatiser-exploitation-it.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/blog-automating-it-operations.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/blog-automatiser-exploitation-it.html"/>
+  </url>
+  <url>
+    <loc>https://www.gwit.ci/en/blog-programs-alliances.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gwit.ci/blog-programmes-alliances-gwit.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gwit.ci/en/blog-programs-alliances.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gwit.ci/blog-programmes-alliances-gwit.html"/>
+  </url>
 </urlset>
