@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#061948">
+  <meta name="msapplication-navbutton-color" content="#061948">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#061948">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="GWIT">
+  <meta name="designer" content="Tech & Web — tech-and-web.com">
+  <link rel="author" href="https://tech-and-web.com">
+  <title>GWIT Blog Télécom IT | Analyses QoS, Ingénierie, SOC/NOC & Cyber</title>
+  <meta name="description" content="Blog GWIT : analyses télécom & IT pour opérateurs, régulateurs, TowerCo et entreprises. QoS/QoE, 2G-5G, ingénierie réseaux, SOC/NOC, cybersécurité et data storytelling KPI.">
+  <meta name="keywords" content="GWIT blog télécom, blog télécom Afrique, analyses QoS QoE, 2G 3G 4G 5G, ingénierie télécom, SOC NOC, cybersécurité IT, data storytelling KPI télécom, TowerCo">
+  <link rel="canonical" href="https://www.gwit.ci/gwit-blog-telecom-it-analyses.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GWIT Blog Télécom IT | Analyses QoS, Ingénierie, SOC/NOC & Cyber">
+  <meta property="og:description" content="Analyses et articles GWIT pour la décision télécom & IT : QoS/QoE, ingénierie réseaux, SOC/NOC, cybersécurité et exécution terrain.">
+  <meta property="og:url" content="https://www.gwit.ci/gwit-blog-telecom-it-analyses.html">
+  <meta property="og:site_name" content="GWIT">
+  <meta property="og:image" content="https://gwit.ci/assets/images/previews/hero-benchmarking.jpg">
+  <meta property="og:locale" content="fr_CI">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GWIT Blog | Analyses QoS, Ingénierie, SOC/NOC & Cyber">
+  <meta name="twitter:description" content="Analyses et articles GWIT pour la décision télécom & IT en Afrique.">
+  <meta name="twitter:image" content="https://gwit.ci/assets/images/previews/hero-benchmarking.jpg">
+  <link rel="icon" type="image/x-icon" href="assets/images/logos/gwit-cadre.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <link rel="stylesheet" href="assets/css/main.min.css?v=20260303r1">
+  <link rel="stylesheet" href="assets/css/template01-gwit.css?v=20260303r1">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "GWIT Blog Télécom IT",
+  "url": "https://www.gwit.ci/gwit-blog-telecom-it-analyses.html",
+  "description": "Analyses et articles GWIT sur la QoS/QoE, l'ingénierie télécom, le SOC/NOC, la cybersécurité et la gouvernance KPI.",
+  "about": [
+    "QoS/QoE",
+    "Ingénierie télécom 2G/3G/4G/5G",
+    "SOC/NOC",
+    "Cybersécurité IT",
+    "Data storytelling KPI"
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Global Wireless Integrated Technologies",
+    "url": "https://www.gwit.ci"
+  }
+}
+  </script>
+</head>
+<body class="premium-active resources-page page-gwit-blog-hub">
+  <a class="skip-link visually-hidden-focusable" href="#main">Aller au contenu</a>
+
+<header class="premium-header sticky-top" role="banner">
+  <nav class="navbar navbar-expand-lg navbar-premium" aria-label="Navigation principale">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" aria-label="GWIT">
+        <img src="assets/images/logos/gwit-1.jpeg" alt="GWIT logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navPremium" aria-controls="navPremium" aria-expanded="false" aria-label="Menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navPremium">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link nav-link-compact" href="index.html">ACCUEIL</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-compact" href="a-propos.html">À PROPOS</a></li>
+          <li class="nav-item dropdown nav-item-services">
+            <a class="nav-link nav-link-compact service-main-link" href="nos-services.html">SERVICES</a>
+            <button class="nav-link nav-link-compact dropdown-toggle dropdown-toggle-split" id="navSolutions" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Afficher la liste des services"></button>
+            <ul class="dropdown-menu" aria-labelledby="navSolutions">
+              <li><a class="dropdown-item" href="services/benchmarking.html">Benchmarking QoS</a></li>
+              <li><a class="dropdown-item" href="services/ingenierie-telecom.html">Ingénierie Télécom</a></li>
+              <li><a class="dropdown-item" href="services/installations-telecom.html">Déploiement & Installations</a></li>
+              <li><a class="dropdown-item" href="services/solutions-it.html">Solutions IT</a></li>
+              <li><a class="dropdown-item" href="services/conseil-formation.html">Support & Formation</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link nav-link-compact active" href="gwit-blog-telecom-it-analyses.html">BLOG & RESSOURCES</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-compact" href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="nav-meta d-lg-flex align-items-center gap-2 ms-lg-3">
+          <a class="meta-pill meta-pill-phone" href="tel:+2250700077373"><i class="fa fa-phone"></i><span>+225 07 00 07 73 73</span></a>
+          <a class="meta-pill" href="mailto:contact@gwit.ci"><i class="fa fa-envelope"></i><span>contact@gwit.ci</span></a>
+        </div>
+        <div class="nav-lang-switch d-flex align-items-center gap-2 ms-lg-2" aria-label="Changement de langue">
+          <a class="lang-flag" href="index.html" lang="fr" hreflang="fr" aria-label="Version française" title="Version française">🇫🇷</a>
+          <a class="lang-flag" href="en/index.html" lang="en" hreflang="en" aria-label="English version" title="English version">🇬🇧</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <div class="main-page-wrapper">
+    <div id="loader-wrapper"><div id="loader"></div></div>
+    <main id="main" tabindex="-1">
+
+<header class="hero-premium hero-article-height resources-hero" role="banner">
+  <div class="active hero-cover-frame">
+    <div class="hero-media-panel">
+      <div class="hero-side-stack hero-side-left" aria-hidden="true">
+        <span class="stack-card stack-card-back"></span>
+        <span class="stack-card stack-card-front"></span>
+      </div>
+      <img src="assets/images/previews/Business-IT-Solutions-Business-Data-Integrator.jpg" alt="Architecture digitale connectee pour analyses télécom et IT GWIT" class="d-block w-100" loading="eager">
+      <div class="hero-side-stack hero-side-right" aria-hidden="true">
+        <span class="stack-card stack-card-front"></span>
+        <span class="stack-card stack-card-back"></span>
+      </div>
+    </div>
+    <div class="hero-overlay" role="region" aria-label="Banniere Blog et Ressources">
+      <div class="container">
+        <div class="hero-content resources-hero-content">
+          <span class="hero-premium-kicker">Observatoire éditorial GWIT</span>
+          <h1>Décider plus vite grâce aux données terrain</h1>
+          <p>GWIT publie des analyses exécutives et des articles opérationnels pour opérateurs, régulateurs, TowerCo, équipementiers et entreprises multisites.</p>
+          <div class="resources-hero-kpis" aria-label="Points clés">
+            <article class="resources-hero-kpi"><strong>+25 ans</strong><span>Exécution télécom & gouvernance KPI</span></article>
+            <article class="resources-hero-kpi"><strong>2G -> 5G</strong><span>Audit, déploiement, optimisation</span></article>
+            <article class="resources-hero-kpi"><strong>QoS / QoE</strong><span>Indicateurs régulateur-ready</span></article>
+          </div>
+          <div class="resources-hero-actions">
+            <a class="btn btn-brand" href="#analyses"><span class="btn-label-desktop">Explorer les analyses</span><span class="btn-label-mobile">Explorer analyses</span></a>
+            <a class="btn btn-outline-brand" href="#articles"><span class="btn-label-desktop">Voir les articles</span><span class="btn-label-mobile">Nos articles</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section-premium resources-analyses" id="analyses" aria-label="Analyses GWIT">
+  <div class="container">
+    <div class="gwit-section-title text-center gwit-reveal"><h2>NOS ANALYSES</h2></div>
+    <div class="resources-top-grid">
+      <article class="resources-top-card" style="background-image:url('assets/images/previews/africa-benchmarking-telecoms.jpg');">
+        <div class="resources-top-content">
+          <span>Benchmarking & QoS</span>
+          <h3>Campagne nationale multi-villes : QoS 5G</h3>
+          <p>Lecture exécutive des signaux QoS/QoE, impacts business et arbitrages prioritaires.</p>
+          <a href="analyse-campagne-qos-5g.html">Lire l'analyse</a>
+        </div>
+      </article>
+      <article class="resources-top-card" style="background-image:url('assets/images/previews/solutions-informatiques.jpg');">
+        <div class="resources-top-content">
+          <span>IT & Cyber</span>
+          <h3>Supervision SOC/NOC convergée</h3>
+          <p>Observabilité, automatisation et gouvernance Zero Trust pour infrastructures critiques.</p>
+          <a href="analyse-supervision-soc-noc.html">Lire l'analyse</a>
+        </div>
+      </article>
+      <article class="resources-top-card" style="background-image:url('assets/images/previews/fibre-optique-lumineux.avif');">
+        <div class="resources-top-content">
+          <span>Data & KPI</span>
+          <h3>Data storytelling pour comités de pilotage</h3>
+          <p>Scorecards, heatmaps et alertes pour accélérer les arbitrages CAPEX/OPEX.</p>
+          <a href="analyse-data-storytelling-comites.html">Lire l'analyse</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section-premium resources-tools" id="articles" aria-label="Filtrer les articles">
+  <div class="container">
+    <div class="gwit-section-title text-center gwit-reveal"><h2>NOS ARTICLES</h2></div>
+    <div class="resources-tools-panel" aria-label="Outils de recherche blog">
+      <label class="resources-search" for="blog-search-input">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input id="blog-search-input" type="search" data-blog-search placeholder="Rechercher un sujet, un mot clé ou un secteur">
+      </label>
+      <div class="resources-tools-actions">
+        <button type="button" class="btn btn-outline-brand btn-sm" data-blog-sort>Trier par date (récent d'abord)</button>
+        <div class="resources-view-switch" role="group" aria-label="Choix de la vue">
+          <button type="button" class="is-active" data-blog-view="grid" aria-pressed="true">Grille</button>
+          <button type="button" data-blog-view="list" aria-pressed="false">Liste</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-filter-bar" aria-label="Filtres catégorie">
+      <button type="button" class="blog-filter-button active" data-filter="all">Tout</button>
+      <button type="button" class="blog-filter-button" data-filter="qos">Benchmarking & QoS</button>
+      <button type="button" class="blog-filter-button" data-filter="ingenierie">Ingénierie & déploiement</button>
+      <button type="button" class="blog-filter-button" data-filter="it">IT & Cyber</button>
+      <button type="button" class="blog-filter-button" data-filter="conseil">Conseil</button>
+      <button type="button" class="blog-filter-button" data-filter="impact">Impact & RSE</button>
+    </div>
+
+    <div class="blog-result-row">
+      <span class="blog-result-count">Articles visibles : <strong data-blog-count>0</strong></span>
+      <span class="blog-result-note">Dernière mise à jour : Février 2026</span>
+    </div>
+  </div>
+</section>
+
+<section class="section-premium resources-feed" aria-label="Liste des articles">
+  <div class="container">
+    <div class="blog-feed-grid" data-blog-view="grid">
+      <article class="blog-card card card-premium" data-categories="qos" data-date="2026-02-05">
+        <div class="blog-card-media" style="background-image:url('assets/images/previews/africa-benchmarking-telecoms.jpg');"></div>
+        <div class="blog-card-body">
+          <div class="blog-card-top">
+            <span class="blog-tag">Benchmarking</span>
+            <span class="blog-date">05 février 2026</span>
+          </div>
+          <div class="blog-card-badges">
+            <button type="button" class="blog-badge" data-filter-target="qos">Benchmarking & QoS</button>
+          </div>
+          <h3>QoS 5G : gouverner une campagne nationale</h3>
+          <p>Retour d'expérience GWIT sur les drive-tests multi-opérateurs, du design de route à la restitution ARTCI-ready.</p>
+          <div class="blog-card-meta"><span>Focus régulation</span></div>
+          <div class="blog-card-actions"><a class="blog-card-button" href="blog-qos-5g.html">Lire l'article</a></div>
+        </div>
+      </article>
+
+      <article class="blog-card card card-premium" data-categories="ingenierie" data-date="2026-01-22">
+        <div class="blog-card-media" style="background-image:url('assets/images/previews/telecoms-ingenierie.jpg');"></div>
+        <div class="blog-card-body">
+          <div class="blog-card-top">
+            <span class="blog-tag">Ingénierie</span>
+            <span class="blog-date">22 janvier 2026</span>
+          </div>
+          <div class="blog-card-badges">
+            <button type="button" class="blog-badge" data-filter-target="ingenierie">Ingénierie & Déploiement</button>
+          </div>
+          <h3>Plan directeur 2G->5G : approche méthodologique</h3>
+          <p>Comment nous calibrons couverture, capacité, énergie et backhaul pour soutenir les ambitions de trafic.</p>
+          <div class="blog-card-meta"><span>Roadmap d'exécution</span></div>
+          <div class="blog-card-actions"><a class="blog-card-button" href="blog-plan-directeur-2g-5g.html">Lire l'article</a></div>
+        </div>
+      </article>
+
+      <article class="blog-card card card-premium" data-categories="it" data-date="2026-01-15">
+        <div class="blog-card-media" style="background-image:url('assets/images/previews/infrastructure-telecom-gwit.jpg');"></div>
+        <div class="blog-card-body">
+          <div class="blog-card-top">
+            <span class="blog-tag">IT & Cyber</span>
+            <span class="blog-date">15 janvier 2026</span>
+          </div>
+          <div class="blog-card-badges">
+            <button type="button" class="blog-badge" data-filter-target="it">IT & Cyber</button>
+          </div>
+          <h3>Architecture SOC pour opérateurs africains</h3>
+          <p>Déployer un centre de supervision convergée couvrant cœur réseau, datacenters et produits digitaux.</p>
+          <div class="blog-card-meta"><span>Cyber & continuité</span></div>
+          <div class="blog-card-actions"><a class="blog-card-button" href="blog-soc-operateurs-africains.html">Lire l'article</a></div>
+        </div>
+      </article>
+
+      <article class="blog-card card card-premium" data-categories="conseil" data-date="2025-12-08">
+        <div class="blog-card-media" style="background-image:url('assets/images/previews/formation-gwit.jpg');"></div>
+        <div class="blog-card-body">
+          <div class="blog-card-top">
+            <span class="blog-tag">Conseil</span>
+            <span class="blog-date">08 décembre 2025</span>
+          </div>
+          <div class="blog-card-badges">
+            <button type="button" class="blog-badge" data-filter-target="conseil">Conseil</button>
+          </div>
+          <h3>Coacher les équipes NOC & RNO après un swap</h3>
+          <p>Structurer les bootcamps, transferts de compétences et KPI humains pour accélérer l'adoption.</p>
+          <div class="blog-card-meta"><span>Capital humain</span></div>
+          <div class="blog-card-actions"><a class="blog-card-button" href="blog-coacher-equipes-noc-rno.html">Lire l'article</a></div>
+        </div>
+      </article>
+
+      <article class="blog-card card card-premium" data-categories="ingenierie impact" data-date="2025-11-18">
+        <div class="blog-card-media" style="background-image:url('assets/images/previews/pylone-telecoms-lumineux.avif');"></div>
+        <div class="blog-card-body">
+          <div class="blog-card-top">
+            <span class="blog-tag">Impact & RSE</span>
+            <span class="blog-date">18 novembre 2025</span>
+          </div>
+          <div class="blog-card-badges">
+            <button type="button" class="blog-badge" data-filter-target="impact">Impact & RSE</button>
+            <button type="button" class="blog-badge" data-filter-target="ingenierie">Ingénierie & Déploiement</button>
+          </div>
+          <h3>Ingénierie verte : sobriété énergétique appliquée</h3>
+          <p>Réduction des consommations, pilotage hybride énergie et critères RSE intégrés dans nos projets.</p>
+          <div class="blog-card-meta"><span>Énergie & résilience</span></div>
+          <div class="blog-card-actions"><a class="blog-card-button" href="blog-ingenierie-verte-sobriete-energetique.html">Lire l'article</a></div>
+        </div>
+      </article>
+
+      <article class="blog-card card card-premium" data-categories="qos" data-date="2025-10-05">
+        <div class="blog-card-media" style="background-image:url('assets/images/previews/fibre-optique-lumineux.avif');"></div>
+        <div class="blog-card-body">
+          <div class="blog-card-top">
+            <span class="blog-tag">Analytics</span>
+            <span class="blog-date">05 octobre 2025</span>
+          </div>
+          <div class="blog-card-badges">
+            <button type="button" class="blog-badge" data-filter-target="qos">Benchmarking & QoS</button>
+          </div>
+          <h3>Data storytelling pour les Comex télécoms</h3>
+          <p>Transformer les points collectés en récits décisionnels : scorecards, heatmaps et alertes intelligentes.</p>
+          <div class="blog-card-meta"><span>Insights décisionnels</span></div>
+          <div class="blog-card-actions"><a class="blog-card-button" href="blog-data-storytelling-comex.html">Lire l'article</a></div>
+        </div>
+      </article>
+
+      <article class="blog-card card card-premium" data-categories="it" data-date="2025-09-20">
+        <div class="blog-card-media" style="background-image:url('assets/images/previews/solutions-informatiques.jpg');"></div>
+        <div class="blog-card-body">
+          <div class="blog-card-top">
+            <span class="blog-tag">Automation</span>
+            <span class="blog-date">20 septembre 2025</span>
+          </div>
+          <div class="blog-card-badges">
+            <button type="button" class="blog-badge" data-filter-target="it">IT & Cyber</button>
+          </div>
+          <h3>Automatiser l'exploitation IT des opérateurs</h3>
+          <p>Blueprint GWIT pour industrialiser CI/CD, observabilité et remédiation automatique des plateformes.</p>
+          <div class="blog-card-meta"><span>Automatisation</span></div>
+          <div class="blog-card-actions"><a class="blog-card-button" href="blog-automatiser-exploitation-it.html">Lire l'article</a></div>
+        </div>
+      </article>
+
+      <article class="blog-card card card-premium" data-categories="impact conseil" data-date="2025-08-06">
+        <div class="blog-card-media" style="background-image:url('assets/images/previews/afrique-connected.avif');"></div>
+        <div class="blog-card-body">
+          <div class="blog-card-top">
+            <span class="blog-tag">Alliances</span>
+            <span class="blog-date">06 août 2025</span>
+          </div>
+          <div class="blog-card-badges">
+            <button type="button" class="blog-badge" data-filter-target="impact">Impact & RSE</button>
+            <button type="button" class="blog-badge" data-filter-target="conseil">Conseil</button>
+          </div>
+          <h3>Programmes & alliances GWIT au service des territoires</h3>
+          <p>Structurer des partenariats public-privé et accélérateurs d'innovation avec institutions et opérateurs.</p>
+          <div class="blog-card-meta"><span>Partenariats</span></div>
+          <div class="blog-card-actions"><a class="blog-card-button" href="blog-programmes-alliances-gwit.html">Lire l'article</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section-premium resources-briefings" aria-label="Briefings exécutifs">
+  <div class="container resources-briefings-grid">
+    <article class="card card-premium resources-briefing-card">
+      <div class="card-body">
+        <span class="resources-briefing-pill">Executive brief</span>
+        <h3>Régulations africaines : préparer les KPI QoE de demain</h3>
+        <p>GWIT accompagne les autorités dans la redéfinition des indicateurs clients, la portabilité des données et les obligations de transparence.</p>
+        <ul>
+          <li>Cartographie des exigences QoS/QoE 2024-2026</li>
+          <li>Modèles de gouvernance opérateur <span aria-hidden="true"><-></span> régulateur</li>
+          <li>Feuille de route CAPEX/OPEX alignée sur les attentes clients</li>
+        </ul>
+        <div class="resources-briefing-actions">
+          <a class="btn btn-outline-brand" href="contact.html">Demander le dossier complet</a>
+          <a class="btn btn-brand" href="services/benchmarking.html">Voir le service</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card card-premium resources-radar-card">
+      <div class="card-body">
+        <h4>Radar des signaux de marché</h4>
+        <div class="resources-radar-item">
+          <span>Régulation watch</span>
+          <p>Évolutions sur la transparence tarifaire, qualité perçue et conformité SLA.</p>
+        </div>
+        <div class="resources-radar-item">
+          <span>Network intelligence</span>
+          <p>Montée en puissance des audits multi-technos pour piloter les arbitrages CAPEX.</p>
+        </div>
+        <div class="resources-radar-item">
+          <span>IT & Cyber</span>
+          <p>Convergence SOC/NOC et gouvernance Zero Trust pour opérateurs et entreprises.</p>
+        </div>
+        <a class="btn btn-brand w-100" href="briefings-telecoms.html">Demander un briefing</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section-premium resources-extra" aria-label="Newsletter et confidentialité">
+  <div class="container resources-extra-grid">
+    <article class="card card-premium newsletter-card">
+      <div class="card-body">
+        <span class="newsletter-pill">Newsletter</span>
+        <h3>Rejoignez le cercle Time To Act</h3>
+        <p>Chaque mois : un insight QoS, une étude ingénierie et un retour d'expérience IT pour les directions télécom & IT.</p>
+        <form id="newsletter-form" class="newsletter-form" novalidate>
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Nom et prénom" required>
+            <input type="email" name="email" placeholder="Email professionnel" required>
+          </div>
+          <button type="submit" class="btn btn-brand">Recevoir les publications</button>
+        </form>
+        <p class="newsletter-note">Aucun spam, désabonnement en un clic.</p>
+      </div>
+    </article>
+
+    <article class="card card-premium newsletter-trust-card">
+      <div class="card-body">
+        <div class="trust-content">
+          <h3>DONNÉES & CONFIDENTIALITÉ</h3>
+          <p>Nous assurons la confidentialité et la protection des données de nos abonnés. Aucune information n'est partagée avec des tiers.</p>
+          <p class="trust-note">Conformité, sécurité et respect du consentement sont au cœur de notre relation avec vous.</p>
+        </div>
+        <div class="trust-logo-panel">
+          <img src="assets/images/logos/gwit-integral.jpeg" alt="Global Wireless Integrated Technologies" class="trust-logo">
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer-premium" role="contentinfo">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-lg-4">
+          <div class="brand">
+            <img src="assets/images/logos/gwit-1.jpeg" alt="GWIT">
+            <span>GWIT<small>Time To Act, Time To Do Better</small></span>
+          </div>
+          <p class="mt-3 small">Global Wireless Integrated Technologies accompagne opérateurs, régulateurs, TowerCo, équipementiers et entreprises avec des livrables télécom et IT actionnables.</p>
+          <div class="footer-social" aria-label="Réseaux sociaux GWIT">
+            <a href="https://www.linkedin.com/company/gwit-ci" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn GWIT"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h6>Services</h6>
+          <ul class="list-unstyled m-0">
+            <li><a class="small-link" href="services/benchmarking.html">Benchmarking QoS</a></li>
+            <li><a class="small-link" href="services/ingenierie-telecom.html">Ingénierie Télécom</a></li>
+            <li><a class="small-link" href="services/installations-telecom.html">Déploiement</a></li>
+            <li><a class="small-link" href="services/solutions-it.html">Solutions IT</a></li>
+            <li><a class="small-link" href="services/conseil-formation.html">Support & Formation</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6>Ressources</h6>
+          <ul class="list-unstyled m-0">
+            <li><a class="small-link" href="gwit-blog-telecom-it-analyses.html">Analyses & Briefings</a></li>
+            <li><a class="small-link" href="index.html#case-studies">Use Cases</a></li>
+            <li><a class="small-link" href="nos-services.html">Nos Services</a></li>
+            <li><a class="small-link" href="a-propos.html">À propos</a></li>
+            <li><a class="small-link" href="GWIT_Doc_Presentation_v11_A4.pdf" download>Plaquette PDF</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3">
+          <h6>Contact</h6>
+          <div class="d-flex flex-column gap-2">
+            <a class="small-link" href="mailto:contact@gwit.ci"><i class="fa fa-envelope"></i> contact@gwit.ci</a>
+            <a class="small-link" href="tel:+2250700077373"><i class="fa fa-phone"></i> +225 07 00 07 73 73</a>
+            <a class="small-link" href="tel:+2250500487373"><i class="fa fa-phone"></i> 05 00 48 73 73</a>
+            <a class="small-link" href="contact.html"><i class="fa fa-comments"></i> Demander un briefing</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-2">
+      <p class="mb-0 small">© 2026 GWIT - Tous droits réservés.</p>
+      <a class="site-credit" href="https://tech-and-web.com" target="_blank" rel="noopener noreferrer">Conception : Tech & Web</a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <button class="scroll-top tran3s" aria-label="Retour en haut"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.min.js?v=20260303r1" defer></script>
+  <script src="assets/js/template01-gwit.js?v=20260303r1" defer></script>
+  <script src="assets/js/site-crm-bridge.js?v=20260303r1" defer></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+• 1. blog-qos-5g
+
+  Technical telecom 5G QoS benchmarking scene in West Africa with minimal people: drive-test vehicle and calibrated RF test equipment, geospatial performance layers, clean network topology
+  overlays, KPI visualization for latency throughput accessibility, infrastructure-focused composition, realistic high-detail engineering photography style, premium corporate palette deep
+  navy (#061948), teal (#009898), orange accents (#FF6B35), no visible faces, no text, no letters, no watermark, no logo, 16:9 horizontal.
+
+  2. blog-plan-directeur-2g-5g
+
+  Strictly technical telecom master plan visualization from 2G to 5G: layered architecture map (RAN, transmission, core), phased rollout sequencing, capacity and coverage modeling boards,
+  infrastructure-first composition with almost no people, realistic engineering visual style, deep navy (#061948), teal (#009898), orange accents (#FF6B35), no visible faces, no text, no
+  letters, no watermark, no logo, 16:9 horizontal.
+
+  3. blog-ingenierie-verte-sobriete-energetique
+
+  Telecom energy engineering setup focused on infrastructure: hybrid power telecom sites, solar arrays, battery cabinets, smart energy controllers, cooling optimization context, highly
+  technical and realistic industrial look, minimal or no people, deep navy (#061948), teal (#009898), orange accents (#FF6B35), no visible faces, no text, no letters, no watermark, no logo,
+  16:9 horizontal.
+
+  4. blog-automatiser-exploitation-it
+
+  Infrastructure-centric IT operations automation scene: server racks, network fabric, observability streams, orchestration pipelines, incident auto-remediation flow visualized on technical
+  displays, near-zero human presence, realistic enterprise engineering style, deep navy (#061948), teal (#009898), orange accents (#FF6B35), no visible faces, no text, no letters, no
+  watermark, no logo, 16:9 horizontal.
+
+  5. blog-soc-operateurs-africains
+
+  Telecom SOC technical environment with minimal humans: SIEM dashboards, threat correlation graphs, network security telemetry, incident timeline walls, critical infrastructure cyber
+  defense mood, realistic technical control-room style, deep navy (#061948), teal (#009898), orange accents (#FF6B35), no visible faces, no text, no letters, no watermark, no logo, 16:9
+  horizontal.
+
+  6. blog-coacher-equipes-noc-rno
+
+  NOC/RNO post-swap stabilization setup focused on tools not people: OSS performance consoles, alarm streams, optimization parameter sets, troubleshooting workflow boards, technical
+  operations environment with little or no faces, realistic engineering style, deep navy (#061948), teal (#009898), orange accents (#FF6B35), no visible faces, no text, no letters, no
+  watermark, no logo, 16:9 horizontal.
+
+  7. blog-data-storytelling-comex
+
+  Executive telecom data storytelling visual without faces: large decision dashboards, KPI scorecards, trend analytics panels, CAPEX OPEX scenario boards, clean and strict information-design
+  composition, realistic high-end corporate technical style, deep navy (#061948), teal (#009898), orange accents (#FF6B35), no visible faces, no text, no letters, no watermark, no logo, 16:9
+  horizontal.
+
+  8. blog-programmes-alliances-gwit
+
+  Telecom partnership program architecture visualization with minimal humans: interconnected operator regulator towerco enterprise nodes, regional infrastructure map, governance workflow
+  layers, delivery roadmap modules, technical ecosystem representation, realistic corporate engineering style, deep navy (#061948), teal (#009898), orange accents (#FF6B35), no visible
+  faces, no text, no letters, no watermark, no logo, 16:9 horizontal.
+
+ 
+

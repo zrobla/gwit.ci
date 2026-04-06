@@ -1,0 +1,50 @@
+• Use these DALL·E prompts (one per current GWIT article).
+  All are already optimized for your telecom/IT corporate context.
+
+  1. blog-qos-5g
+
+  Corporate telecom performance campaign in West Africa: engineers running 5G QoS drive-test operations, one vehicle with rooftop test equipment, urban and peri-urban context, large screen
+  showing clean network heatmap and KPI dashboards (latency, throughput, accessibility), executive decision-making atmosphere, realistic photography style, premium B2B visual identity, deep
+  navy (#061948), teal (#009898), orange accents (#FF6B35), clean composition, no text, no letters, no watermark, no logo, 16:9 horizontal.
+
+  2. blog-plan-directeur-2g-5g
+
+  Telecom strategy planning room for a 2G to 5G master plan in Africa, senior engineers and CTO reviewing a structured network evolution model (RAN, transmission, core, energy), map-based
+  rollout sequencing and investment prioritization visuals on screens, realistic and professional corporate style, premium B2B look, deep navy (#061948), teal (#009898), orange accents
+  (#FF6B35), no text, no letters, no watermark, no logo, 16:9 horizontal.
+
+  3. blog-ingenierie-verte-sobriete-energetique
+
+  Green telecom engineering scene in Africa: modern telecom site with hybrid solar energy, battery systems, smart power management, engineers auditing energy efficiency KPIs on tablets,
+  sustainability and operational reliability focus, realistic high-end corporate style, clean and technical composition, deep navy (#061948), teal (#009898), orange accents (#FF6B35), no
+  text, no letters, no watermark, no logo, 16:9 horizontal.
+
+  4. blog-automatiser-exploitation-it
+
+  Advanced telecom IT operations center with automation workflows: operators supervising infrastructure-as-code pipelines, observability dashboards, incident automation and orchestration
+  screens, enterprise-grade cloud and network operations context in Africa, realistic corporate B2B style, deep navy (#061948), teal (#009898), orange accents (#FF6B35), no text, no letters,
+  no watermark, no logo, 16:9 horizontal.
+
+  5. blog-soc-operateurs-africains
+
+  Cybersecurity SOC for telecom operators in Africa: analysts monitoring threat intelligence, network security telemetry, incident response coordination with NOC context, high-trust critical
+  infrastructure environment, realistic premium corporate style, deep navy (#061948), teal (#009898), orange accents (#FF6B35), no text, no letters, no watermark, no logo, 16:9 horizontal.
+
+  6. blog-coacher-equipes-noc-rno
+
+  Post-swap telecom coaching session in an operations center: senior expert mentoring NOC and RNO engineers, collaborative troubleshooting, KPI stabilization dashboards, practical field-to-
+  operations transfer of competence, realistic corporate training environment, deep navy (#061948), teal (#009898), orange accents (#FF6B35), no text, no letters, no watermark, no logo, 16:9
+  horizontal.
+
+  7. blog-data-storytelling-comex
+
+  Executive telecom boardroom in Africa: COMEX-level decision meeting with concise KPI storytelling dashboards, strategic charts and operational scorecards, strong business-governance
+  atmosphere, realistic premium B2B style, clean composition, deep navy (#061948), teal (#009898), orange accents (#FF6B35), no text, no letters, no watermark, no logo, 16:9 horizontal.
+
+  8. blog-programmes-alliances-gwit
+
+  Telecom ecosystem partnership scene in Africa: operator, regulator, tower company and enterprise stakeholders in a strategic program workshop, collaborative planning around regional
+  connectivity and impact, professional corporate realism, premium B2B look, deep navy (#061948), teal (#009898), orange accents (#FF6B35), no text, no letters, no watermark, no logo, 16:9
+  horizontal.
+
+

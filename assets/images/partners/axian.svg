@@ -1,0 +1,5 @@
+<svg width="240" height="120" viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AXIAN Telecom">
+  <rect rx="16" ry="16" width="240" height="120" fill="#111827"/>
+  <text x="50%" y="52%" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-size="40" font-weight="800" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">AXIAN</text>
+  <text x="50%" y="76%" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-size="18" font-weight="600" fill="#00b2d6" text-anchor="middle" dominant-baseline="middle">Telecom</text>
+</svg>

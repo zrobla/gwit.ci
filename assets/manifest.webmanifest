@@ -1,0 +1,22 @@
+{
+  "name": "GWIT",
+  "short_name": "GWIT",
+  "description": "Global Wireless Integrated Technologies",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#061948",
+  "theme_color": "#061948",
+  "icons": [
+    {
+      "src": "images/logos/gwit-cadre-2.png",
+      "sizes": "205x143",
+      "type": "image/png"
+    },
+    {
+      "src": "images/logos/gwit-cadre.ico",
+      "sizes": "32x28",
+      "type": "image/x-icon"
+    }
+  ]
+}
