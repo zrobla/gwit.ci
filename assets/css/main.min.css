@@ -251,7 +251,7 @@ body{color:var(--text);font-family:'Inter',system-ui,-apple-system,Segoe UI,Robo
   .hero-premium h1{font-size:1.15rem;line-height:1.25;letter-spacing:.1px}
   .hero-premium p{font-size:.9rem;line-height:1.4;margin-bottom:.5rem}
   .hero-premium .cta-row{gap:.5rem;margin-top:.5rem;display:flex;flex-wrap:nowrap}
-  .hero-premium .cta-row .btn{padding:.45rem .7rem;font-size:.85rem;flex:1 1 0;min-width:0;text-align:center;white-space:nowrap}
+  .hero-premium .cta-row .btn{padding:.5rem .65rem;font-size:.8rem;flex:1 1 0;min-width:0;max-width:100%;text-align:center;white-space:normal;overflow-wrap:anywhere;word-break:break-word;line-height:1.2}
   .hero-premium .chips{gap:.35rem;margin-top:.5rem}
   .chip{padding:.25rem .45rem;font-size:.75rem}
   .hero-premium .chips .chip:nth-child(n+3){display:none}
