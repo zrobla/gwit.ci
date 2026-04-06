@@ -161,8 +161,12 @@
     heroRoot.addEventListener('focusin',stopHeroAuto);
     heroRoot.addEventListener('focusout',startHeroAuto);
 
-    setHeroSlide(0,{initial:true});
-    startHeroAuto();
+    /* First slide: brief delay so CSS entrance transitions fire visibly */
+    heroIndex=-1;
+    setTimeout(function(){
+      setHeroSlide(0);
+      startHeroAuto();
+    }, 120);
   }
 
   var premiumHeader=document.querySelector('.premium-header');
