@@ -575,7 +575,7 @@ body.resources-page .trust-logo{width:170px;max-width:100%;height:auto;display:b
   body.resources-page.page-gwit-blog-hub .resources-hero .hero-cover-frame .hero-overlay{position:absolute;inset:var(--hero-frame-inset-y) var(--hero-frame-inset-x);height:auto;border-radius:18px;padding:calc(var(--gwit-header-offset) - 8px) 14px 14px;min-height:inherit;background:linear-gradient(108deg,rgba(6,25,72,.78),rgba(6,25,72,.44) 56%,rgba(6,25,72,.24));border:0;box-shadow:none}
   body.resources-page.page-gwit-blog-hub .resources-hero img{object-position:center 32%}
   body.resources-page.page-gwit-blog-hub .resources-hero-actions{display:flex;flex-wrap:nowrap;gap:8px;width:100%}
-  body.resources-page.page-gwit-blog-hub .resources-hero-actions .btn{flex:1 1 0;white-space:nowrap;text-align:center;padding:9px 10px}
+  body.resources-page.page-gwit-blog-hub .resources-hero-actions .btn{flex:1 1 0;min-width:0;max-width:100%;white-space:normal;overflow-wrap:anywhere;word-break:break-word;text-align:center;line-height:1.2;padding:9px 10px}
   body.resources-page.page-gwit-blog-hub .resources-hero-actions .btn-label-desktop{display:none}
   body.resources-page.page-gwit-blog-hub .resources-hero-actions .btn-label-mobile{display:inline}
   body.resources-page .resources-hero-kpis{grid-template-columns:1fr;max-width:420px}
@@ -1181,6 +1181,8 @@ body.service-page .case-study-actions{display:flex;justify-content:flex-start}
   body.services-page .service-secondary-cta,
   body.service-page .service-primary-cta,
   body.service-page .service-secondary-cta{width:100%}
+  /* Mobile CTA wrap-safety: prevent long French uppercase labels from overflowing narrow buttons */
+  .service-primary-cta,.service-secondary-cta,.btn.btn-brand,.btn.btn-outline-brand,.about-cta-row .btn,.about-hero-actions .btn,.cta-row .btn,.hero-actions .btn,.service-hero-actions .btn,.article-hero-actions .btn,.resources-hero-actions .btn{max-width:100%;min-width:0;white-space:normal;overflow-wrap:anywhere;word-break:break-word;text-align:center;line-height:1.22;letter-spacing:.02em;padding-left:14px;padding-right:14px}
   body.service-page .case-study-cta{max-width:none}
   body.contact-page .contact-hero-cards{grid-template-columns:1fr}
   body.contact-page .contact-details .contact-channel-card{padding:16px 14px}
