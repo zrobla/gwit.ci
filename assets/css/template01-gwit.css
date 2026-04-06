@@ -1284,6 +1284,16 @@ body.service-page .case-study-actions{display:flex;justify-content:flex-start}
   .gwit-whyus .whyus-tabs .tab-item .tab-icon{font-size:1.35rem;line-height:1}
   .gwit-whyus .whyus-tabs .tab-item > span:not(.tab-icon){position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
   .gwit-whyus .whyus-tabs .tab-item.active{background:linear-gradient(180deg,var(--brand-primary) 0%,#0a2566 100%);color:#fff;border-color:transparent;box-shadow:0 10px 22px rgba(6,25,72,.28)}
+  .gwit-whyus .whyus-section-card.is-revealed .whyus-tabs .tab-item .tab-icon{animation:gwitWhyusIconPulse .7s cubic-bezier(.34,1.56,.64,1) both}
+  .gwit-whyus .whyus-section-card.is-revealed .whyus-tabs .tab-item:nth-child(1) .tab-icon{animation-delay:.30s}
+  .gwit-whyus .whyus-section-card.is-revealed .whyus-tabs .tab-item:nth-child(2) .tab-icon{animation-delay:.42s}
+  .gwit-whyus .whyus-section-card.is-revealed .whyus-tabs .tab-item:nth-child(3) .tab-icon{animation-delay:.54s}
+  .gwit-whyus .whyus-section-card.is-revealed .whyus-tabs .tab-item:nth-child(4) .tab-icon{animation-delay:.66s}
+  .gwit-whyus .whyus-section-card.is-revealed .whyus-tabs .tab-item:nth-child(5) .tab-icon{animation-delay:.78s}
+  @keyframes gwitWhyusIconPulse{0%{transform:scale(1)}45%{transform:scale(1.22)}100%{transform:scale(1)}}
+  @media (prefers-reduced-motion:reduce){
+    .gwit-whyus .whyus-section-card.is-revealed .whyus-tabs .tab-item .tab-icon{animation:none}
+  }
   .gwit-whyus .whyus-content{padding:6px}
   .gwit-whyus .whyus-content .content-panel{padding:14px;border-radius:12px;box-shadow:0 14px 26px rgba(6,25,72,.09)}
   .gwit-whyus .whyus-content h3{font-size:.84rem;letter-spacing:.06em}
