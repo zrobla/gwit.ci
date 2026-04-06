@@ -1270,6 +1270,7 @@ body.service-page .case-study-actions{display:flex;justify-content:flex-start}
   .hero-premium-slider .hero-premium-slide{filter:blur(2px)}
   .hero-premium-slider .hero-premium-slide.is-leaving{filter:blur(2px)}
   .hero-premium-slider .hero-content{padding:16px;backdrop-filter:blur(3px)}
+  .section-premium .gwit-section-title h2,.gwit-section-title h2{font-size:1.25rem!important;letter-spacing:.1em!important}
   .hero-premium-slider .hero-content h1{font-size:1.25rem;-webkit-text-fill-color:#fff;animation:none}
   .hero-premium-slider .hero-content p{font-size:.84rem}
   .hero-premium-tags{gap:6px}
